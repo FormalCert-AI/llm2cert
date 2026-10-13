@@ -2322,7 +2322,7 @@
             "$x^\\star=(0,0)$",
             "Original $\\mathcal{N}=\\mathbb{R}^{2}$",
             "Original verified type: global asymptotic stability",
-            "Verified method in the original paper: human verfied by product",
+            "Verified method in the original paper: human verified by product",
             "Our $\\mathcal{N}=\\mathbb{R}^{2}$",
             "Our verified type: global asymptotic stability"
           ],
@@ -2411,7 +2411,7 @@
               "requires_initial_set": false,
               "target": "Stability certification"
             },
-            "reported_method_latex": "Verified method in the original paper: human verfied by product",
+            "reported_method_latex": "Verified method in the original paper: human verified by product",
             "reported_type_latex": "Original verified type: global asymptotic stability"
           }
         },
@@ -2758,14 +2758,14 @@
           "problem": 1,
           "problem_name": "Stability certification",
           "raw_items_latex": [
-            "$x^\\star=(0,0,0,0,0)$",
+            "$x^\\star=(0,0,0,0,0,0,0,0)$",
             "$\\mathcal{N}=\\mathbb{R}^{8}$",
             "Verified type: Global exponential stability"
           ],
           "record_id": "DCB-OURS-P1-001",
           "sets": {
             "equilibrium": {
-              "latex": "$x^\\star=(0,0,0,0,0)$",
+              "latex": "$x^\\star=(0,0,0,0,0,0,0,0)$",
               "note": "",
               "source": "overleaf_item",
               "status": "specified"
@@ -3056,7 +3056,7 @@
               "\\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{\\theta}\\\\ \\dot{\\omega} \\end{pmatrix} = \\begin{pmatrix} \\omega\\\\ \\dfrac{mg\\ell\\sin(\\theta)+u-0.1\\omega}{m\\ell^2} \\end{pmatrix}.",
               "u=20\\tanh(-23.286329\\theta-5.27055\\omega),"
             ],
-            "specification_latex": "The closed-loop vector flow field is: \\[ \\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{\\theta}\\\\ \\dot{\\omega} \\end{pmatrix} = \\begin{pmatrix} \\omega\\\\ \\dfrac{mg\\ell\\sin(\\theta)+u-0.1\\omega}{m\\ell^2} \\end{pmatrix}. \\] \\[ u=20\\tanh(-23.286329\\theta-5.27055\\omega), \\] where $m=0.15$ and $\\ell=0.5$.",
+            "specification_latex": "The closed-loop vector flow field is: \\[ \\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{\\theta}\\\\ \\dot{\\omega} \\end{pmatrix} = \\begin{pmatrix} \\omega\\\\ \\dfrac{mg\\ell\\sin(\\theta)+u-0.1\\omega}{m\\ell^2} \\end{pmatrix}. \\] \\[ u=20\\tanh(-23.286329\\theta-5.27055\\omega), \\] where $m=0.15,\\ell=0.5$ and $g=9.81$.",
             "time_domain": {
               "source": "dynamics_notation",
               "status": "inferred",
@@ -3433,7 +3433,7 @@
             "$x^\\star=(0,0,0)$",
             "Original $\\mathcal{N}=\\{\\mathbf{x}\\in\\mathbb{R}^{3}\\mid0.01^2\\leq x_1^2+x_2^2+x_3^2\\leq2^2\\}$",
             "$\\mathcal{X}_I=\\{\\mathbf{x}\\in\\mathbb{R}^{3}\\mid x_1^2+x_2^2+x_3^2\\leq0.3^2\\}$",
-            "$u_1,u_2,u_3 \\in \\mathbb{R}^n$\\",
+            "$u_1,u_2,u_3 \\in \\mathbb{R}$\\",
             "Original verified type: $\\epsilon$-ROA",
             "Verified method in the original paper: dReal",
             "Our $\\mathcal{N}=\\{\\mathbf{x}\\in\\mathbb{R}^{3}\\mid x_1^2+x_2^2+x_3^2\\leq2^2\\}$",
@@ -3514,7 +3514,7 @@
           "tier": "literature",
           "tier_name": "Literature-derived",
           "verification": {
-            "control_constraints_latex": "$u_1,u_2,u_3 \\in \\mathbb{R}^n$\\",
+            "control_constraints_latex": "$u_1,u_2,u_3 \\in \\mathbb{R}$\\",
             "normalized_contract": {
               "current_framework_profile": "supported",
               "required_set_roles": [
@@ -4506,7 +4506,7 @@
             "display_math_latex": [
               "\\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{x}_1\\\\ \\dot{x}_2 \\end{pmatrix} = \\begin{pmatrix} x_2\\\\[1ex] \\sin(x_1) + u \\end{pmatrix},"
             ],
-            "specification_latex": "The vector flow field is: \\[ \\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{x}_1\\\\ \\dot{x}_2 \\end{pmatrix} = \\begin{pmatrix} x_2\\\\[1ex] \\sin(x_1) + u \\end{pmatrix}, \\] where $u = -3x_1 - 3x_2$ with $u \\in [-1.5, 1.5]$.",
+            "specification_latex": "The vector flow field is: \\[ \\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{x}_1\\\\ \\dot{x}_2 \\end{pmatrix} = \\begin{pmatrix} x_2\\\\[1ex] \\sin(x_1) + u \\end{pmatrix}, \\] where $u = -3x_1 - 3x_2$.",
             "time_domain": {
               "source": "dynamics_notation",
               "status": "inferred",
@@ -4724,7 +4724,7 @@
             "display_math_latex": [
               "\\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{x}_1\\\\ \\dot{x}_2\\\\ \\dot{x}_3\\\\ \\dot{x}_4 \\end{pmatrix} = \\begin{pmatrix} x_2\\\\[1ex] \\dfrac{u + 0.1\\,x_4^2 \\sin x_3 - 0.981 \\sin x_3 \\cos x_3}{1 + 0.1\\sin^2 x_3}\\\\[2ex] x_4\\\\[1ex] \\dfrac{10.791 \\sin x_3 - u \\cos x_3 - 0.1\\,x_4^2 \\sin x_3 \\cos x_3}{1 + 0.1\\sin^2 x_3} \\end{pmatrix},"
             ],
-            "specification_latex": "The vector flow field is: \\[ \\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{x}_1\\\\ \\dot{x}_2\\\\ \\dot{x}_3\\\\ \\dot{x}_4 \\end{pmatrix} = \\begin{pmatrix} x_2\\\\[1ex] \\dfrac{u + 0.1\\,x_4^2 \\sin x_3 - 0.981 \\sin x_3 \\cos x_3}{1 + 0.1\\sin^2 x_3}\\\\[2ex] x_4\\\\[1ex] \\dfrac{10.791 \\sin x_3 - u \\cos x_3 - 0.1\\,x_4^2 \\sin x_3 \\cos x_3}{1 + 0.1\\sin^2 x_3} \\end{pmatrix}, \\] where $u = x_1 + 2.4109\\,x_2 + 34.3620\\,x_3 + 10.7009\\,x_4$ with $u \\in [-30, 30]$.",
+            "specification_latex": "The vector flow field is: \\[ \\dot{\\mathbf{x}} = \\begin{pmatrix} \\dot{x}_1\\\\ \\dot{x}_2\\\\ \\dot{x}_3\\\\ \\dot{x}_4 \\end{pmatrix} = \\begin{pmatrix} x_2\\\\[1ex] \\dfrac{u + 0.1\\,x_4^2 \\sin x_3 - 0.981 \\sin x_3 \\cos x_3}{1 + 0.1\\sin^2 x_3}\\\\[2ex] x_4\\\\[1ex] \\dfrac{10.791 \\sin x_3 - u \\cos x_3 - 0.1\\,x_4^2 \\sin x_3 \\cos x_3}{1 + 0.1\\sin^2 x_3} \\end{pmatrix}, \\] where $u = x_1 + 2.4109\\,x_2 + 34.3620\\,x_3 + 10.7009\\,x_4$.",
             "time_domain": {
               "source": "dynamics_notation",
               "status": "inferred",
@@ -5258,7 +5258,7 @@
               "end": 4155,
               "start": 4119
             },
-            "title_latex": "New-6D Cosine Cascade Invariance"
+            "title_latex": "New-6D Sin Cascade Invariance"
           },
           "source_order": 97,
           "system": {
@@ -6768,7 +6768,7 @@
             "$\\mathcal{X}=\\{\\mathbf{u}\\in\\mathbb{R}^{3}\\mid u_i\\geq0,\\ u_1+u_2+u_3\\leq10.013\\}$",
             "$\\mathcal{X}_I= [9.985,9.995]\\times[0.005,0.015]\\times[0,0.003]$",
             "$\\mathcal{X}_U=\\{\\mathbf{u}\\mid u_3>1\\}$",
-            "Verified type: forward-invariance verification",
+            "Verified type: safety verification",
             "Verified method in the original paper: polynomial abstraction and SOS programming"
           ],
           "record_id": "DCB-LIT-P4-010",
@@ -6858,7 +6858,7 @@
               "target": "Safety verification"
             },
             "reported_method_latex": "Verified method in the original paper: polynomial abstraction and SOS programming",
-            "reported_type_latex": "Verified type: forward-invariance verification"
+            "reported_type_latex": "Verified type: safety verification"
           }
         },
         {

@@ -1951,7 +1951,7 @@
         "assumptions": [
           "Deterministically normalized from canonical record DCB-LIT-P3-004.",
           "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
-          "The paper's fixed linear policy is substituted exactly into the closed-loop dynamics; its stated range is [-30,30]."
+          "The paper's fixed linear policy is substituted exactly into the closed-loop dynamics; it is not synthesized as a free input."
         ],
         "unsafe_set": {
           "type": "box",
@@ -6161,7 +6161,7 @@
       "problem": {
         "problem_id": "dcb_ours_p3_001",
         "task_type": "invariant",
-        "name": "DynaCertBench System 097 · DCB-OURS-P3-001 · New-6D Cosine Cascade Invariance",
+        "name": "DynaCertBench System 097 · DCB-OURS-P3-001 · New-6D Sin Cascade Invariance",
         "dynamics": "dx1/dt = x2+u0, dx2/dt = -x1-1/10*sin(x1)-x2+x3, dx3/dt = -2*x3+x4, dx4/dt = -3/2*x4+x5, dx5/dt = -2*x5+x6, dx6/dt = -3/2*x6+u1",
         "source": "paper System 97; canonical record DCB-OURS-P3-001",
         "assumptions": [
