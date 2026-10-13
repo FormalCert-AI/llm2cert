@@ -1,0 +1,125 @@
+{
+  "ahmed_load_case": [
+    "DCB-LIT-P1-001",
+    "DCB-LIT-P1-002",
+    "DCB-LIT-P1-006",
+    "DCB-LIT-P1-007",
+    "DCB-LIT-P1-008",
+    "DCB-LIT-P1-009",
+    "DCB-LIT-P1-013",
+    "DCB-LIT-P1-014",
+    "DCB-LIT-P1-015",
+    "DCB-LIT-P1-016",
+    "DCB-LIT-P1-017",
+    "DCB-LIT-P1-019",
+    "DCB-LIT-P1-020"
+  ],
+  "ahmed_polynomial_table_subset": [
+    "DCB-LIT-P1-002",
+    "DCB-LIT-P1-006",
+    "DCB-LIT-P1-007",
+    "DCB-LIT-P1-008",
+    "DCB-LIT-P1-009",
+    "DCB-LIT-P1-013",
+    "DCB-LIT-P1-016",
+    "DCB-LIT-P1-020"
+  ],
+  "budget_seconds": 2400,
+  "dataset": "dynacertbench_executable.json",
+  "methods": {
+    "analytical_rl": {
+      "eligible_count": 7,
+      "eligible_ids": [
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-014",
+        "DCB-LIT-P1-015",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-017",
+        "DCB-LIT-P1-019",
+        "DCB-LIT-P1-020"
+      ]
+    },
+    "cbf": {
+      "eligible_count": 8,
+      "eligible_ids": [
+        "DCB-LIT-P3-002",
+        "DCB-LIT-P3-003",
+        "DCB-LIT-P4-003",
+        "DCB-LIT-P4-004",
+        "DCB-LIT-P4-005",
+        "DCB-LIT-P4-006",
+        "DCB-LIT-P4-009",
+        "DCB-EXT-P4-005"
+      ]
+    },
+    "fossil_generic": {
+      "eligible_count": 49,
+      "eligible_ids": [
+        "DCB-LIT-P1-002",
+        "DCB-LIT-P1-003",
+        "DCB-LIT-P1-004",
+        "DCB-LIT-P1-005",
+        "DCB-LIT-P1-006",
+        "DCB-LIT-P1-007",
+        "DCB-LIT-P1-008",
+        "DCB-LIT-P1-009",
+        "DCB-LIT-P1-011",
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-014",
+        "DCB-LIT-P1-015",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-017",
+        "DCB-LIT-P1-018",
+        "DCB-LIT-P1-019",
+        "DCB-LIT-P1-020",
+        "DCB-LIT-P1-021",
+        "DCB-LIT-P4-001",
+        "DCB-LIT-P4-002",
+        "DCB-LIT-P4-003",
+        "DCB-LIT-P4-004",
+        "DCB-LIT-P4-005",
+        "DCB-LIT-P4-006",
+        "DCB-LIT-P4-007",
+        "DCB-LIT-P4-008",
+        "DCB-LIT-P4-009",
+        "DCB-LIT-P4-010",
+        "DCB-LIT-P4-011",
+        "DCB-LIT-P4-019",
+        "DCB-LIT-P4-021",
+        "DCB-LIT-P4-022",
+        "DCB-LIT-P4-026",
+        "DCB-LIT-P4-035",
+        "DCB-LIT-P4-036",
+        "DCB-LIT-P4-037",
+        "DCB-LIT-P4-038",
+        "DCB-LIT-P4-039",
+        "DCB-LIT-P4-040",
+        "DCB-LIT-P4-041",
+        "DCB-LIT-P4-043",
+        "DCB-LIT-P4-044",
+        "DCB-LIT-P4-045",
+        "DCB-EXT-P1-001",
+        "DCB-EXT-P1-002",
+        "DCB-EXT-P4-005",
+        "DCB-OURS-P1-001",
+        "DCB-OURS-P1-002",
+        "DCB-OURS-P4-001"
+      ]
+    },
+    "synnlf": {
+      "eligible_count": 8,
+      "eligible_ids": [
+        "DCB-LIT-P1-002",
+        "DCB-LIT-P1-006",
+        "DCB-LIT-P1-007",
+        "DCB-LIT-P1-008",
+        "DCB-LIT-P1-009",
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-020"
+      ]
+    }
+  },
+  "note": "Supported benchmark sets. Saved native acceptances are carried forward only for unchanged mathematical instances.",
+  "record_count": 105
+}

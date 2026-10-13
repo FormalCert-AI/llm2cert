@@ -1,0 +1,88 @@
+{
+  "env": {
+    "ibex_lib": "<BASELINE_STAGE_ROOT>/envs/fossil-libs",
+    "mosek_license": "<BASELINE_STAGE_ROOT>/envs/mosek.lic",
+    "stage_root": "<BASELINE_STAGE_ROOT>"
+  },
+  "methods": {
+    "cbf": {
+      "cases": [
+        {
+          "case_id": "DCB-LIT-P3-002",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-003",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-005",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-009",
+          "failure_reason": null,
+          "passed": true
+        }
+      ],
+      "failure_reasons": {},
+      "method": "cbf",
+      "native_accepted_denominator": 4,
+      "strict": "4/4",
+      "strict_passed": 4
+    },
+    "synnlf": {
+      "cases": [
+        {
+          "case_id": "DCB-LIT-P1-002",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P1-006",
+          "failure_reason": "sos_infeasible_eps0",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P1-007",
+          "failure_reason": "sos_infeasible_eps0",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P1-008",
+          "failure_reason": "sos_infeasible_eps0",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P1-009",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P1-013",
+          "failure_reason": "sos_infeasible_eps0",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P1-016",
+          "failure_reason": null,
+          "passed": true
+        }
+      ],
+      "failure_reasons": {
+        "sos_infeasible_eps0": 4
+      },
+      "method": "synnlf",
+      "native_accepted_denominator": 7,
+      "strict": "3/7",
+      "strict_passed": 3
+    }
+  },
+  "mode": "strict",
+  "schema_version": "baseline-native-strict.v1",
+  "stage_root": "<BASELINE_STAGE_ROOT>",
+  "stamp": "20260919T1635Z-synnlf-cbf"
+}

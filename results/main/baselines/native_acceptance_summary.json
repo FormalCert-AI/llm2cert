@@ -1,0 +1,101 @@
+{
+  "methods": {
+    "analytical_rl": {
+      "accepted_cases": [
+        "DCB-LIT-P1-015"
+      ],
+      "execution_status": {
+        "completed": 1,
+        "infrastructure_error": 3,
+        "timed_out": 3
+      },
+      "infrastructure_errors": [
+        {
+          "case": "DCB-LIT-P1-019",
+          "error": "cannot access local variable 'gp_collection_reward' where it is not associated with a value",
+          "path": "<RELEASE_ROOT>/benchmark/native_stage1_20260916T0141/results/node10/analytical_rl_v7/DCB-LIT-P1-019/result.json"
+        },
+        {
+          "case": "DCB-LIT-P1-016",
+          "error": "cannot access local variable 'gp_collection_reward' where it is not associated with a value",
+          "path": "<RELEASE_ROOT>/benchmark/native_stage1_20260916T0141/results/node8/analytical_rl_v6/DCB-LIT-P1-016/result.json"
+        },
+        {
+          "case": "DCB-LIT-P1-017",
+          "error": "cannot access local variable 'gp_collection_reward' where it is not associated with a value",
+          "path": "<RELEASE_ROOT>/benchmark/native_stage1_20260916T0141/results/node8/analytical_rl_v6/DCB-LIT-P1-017/result.json"
+        }
+      ],
+      "native_accepted": 1,
+      "results": 7
+    },
+    "cbf": {
+      "accepted_cases": [
+        "DCB-LIT-P3-002",
+        "DCB-LIT-P4-003",
+        "DCB-LIT-P4-005",
+        "DCB-LIT-P4-009"
+      ],
+      "execution_status": {
+        "completed": 6,
+        "timed_out": 2
+      },
+      "infrastructure_errors": [],
+      "native_accepted": 4,
+      "results": 8
+    },
+    "fossil_generic": {
+      "accepted_cases": [
+        "DCB-LIT-P4-003",
+        "DCB-LIT-P4-008",
+        "DCB-LIT-P4-026",
+        "DCB-LIT-P4-037",
+        "DCB-LIT-P4-038",
+        "DCB-LIT-P4-040",
+        "DCB-LIT-P4-041",
+        "DCB-LIT-P4-045"
+      ],
+      "execution_status": {
+        "completed": 44,
+        "infrastructure_error": 1,
+        "timed_out": 3
+      },
+      "infrastructure_errors": [
+        {
+          "case": "DCB-LIT-P1-018",
+          "error": "'d1'"
+        }
+      ],
+      "native_accepted": 8,
+      "recount_policy": "eligible_jobs_only_timeout_as_fail_v1",
+      "results": 48,
+      "unified_recount": "fossil_native_unified.v1 includes legacy native_jobs/fossil"
+    },
+    "synnlf": {
+      "accepted_cases": [
+        "DCB-LIT-P1-002",
+        "DCB-LIT-P1-006",
+        "DCB-LIT-P1-007",
+        "DCB-LIT-P1-008",
+        "DCB-LIT-P1-009",
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-016"
+      ],
+      "execution_status": {
+        "completed": 7,
+        "infrastructure_error": 1
+      },
+      "infrastructure_errors": [
+        {
+          "case": "DCB-LIT-P1-020",
+          "error": "Polynomial degree must be even!",
+          "path": "<RELEASE_ROOT>/benchmark/native_stage1_20260916T0141/results/node10/synnlf/DCB-LIT-P1-020/seed-167/result.json"
+        }
+      ],
+      "native_accepted": 7,
+      "results": 8
+    }
+  },
+  "result_count": 71,
+  "scope": "Saved native acceptance records used in paper accounting; earlier alternate FOSSIL adapter results are excluded."
+}

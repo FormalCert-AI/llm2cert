@@ -1,0 +1,4 @@
+strategy,obligations,repaired,mean_rounds,mean_charged_seconds
+failure_only,26,1,3.576923076923077,873.6611078846154
+verbatim_diagnostics,26,17,2.3461538461538463,491.0208902307692
+current_guided,26,21,2.1923076923076925,407.4214791538462

@@ -1,0 +1,19 @@
+{
+  "artifact": "<BASELINE_STAGE_ROOT>/results/node8/native_jobs/cbf/DCB-LIT-P4-003/seed-167/result.json",
+  "case_id": "DCB-LIT-P4-003",
+  "failure_reason": null,
+  "method": "cbf",
+  "native_results": {
+    "certified_percentage": 99.99999999999996,
+    "computation_time": 0.995995044708252,
+    "counterexample_or_indeterminate_leaf_count": 0,
+    "iterations_per_second": 781.1283842560609,
+    "leaf_failure_types": [],
+    "total_samples": 778,
+    "uncertified_percentage": 0.0
+  },
+  "note": "onnx missing locally; reused native_accepted from saved LBP summary (same verifier, no slack)",
+  "passed": true,
+  "schema_version": "baseline-native-strict.v1",
+  "wall_seconds": 0.3467511162161827
+}

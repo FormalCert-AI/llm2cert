@@ -1,0 +1,145 @@
+{
+  "accounting": "Unchanged mathematical problems retain saved native and Strict acceptances; FOSSIL outcomes include the recorded terminal results.",
+  "both_native_and_full": 17,
+  "dataset": "dynacertbench_executable.json",
+  "fossil_targeted_completion": {
+    "budget_seconds": 2400,
+    "record_id": "DCB-OURS-P4-001",
+    "status": "timed_out"
+  },
+  "full_on_union": 40,
+  "full_only": 23,
+  "native_counts": {
+    "1_ahmed": 0,
+    "2_fossil": 8,
+    "3_cbf": 4,
+    "4_rl": 1,
+    "5_synnlf": 7
+  },
+  "native_only": [
+    "DCB-LIT-P4-009",
+    "DCB-LIT-P4-037"
+  ],
+  "native_union": 19,
+  "neither": 9,
+  "strict_counts": {
+    "analytical_rl": 0,
+    "cbf": 4,
+    "fossil": 5,
+    "synnlf": 3
+  },
+  "strict_union": 11,
+  "subsets": {
+    "ahmed": {
+      "full_verified": 8,
+      "ids": [
+        "DCB-LIT-P1-002",
+        "DCB-LIT-P1-006",
+        "DCB-LIT-P1-007",
+        "DCB-LIT-P1-008",
+        "DCB-LIT-P1-009",
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-020"
+      ],
+      "systems": 8
+    },
+    "analytical_rl": {
+      "full_verified": 5,
+      "ids": [
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-014",
+        "DCB-LIT-P1-015",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-017",
+        "DCB-LIT-P1-019",
+        "DCB-LIT-P1-020"
+      ],
+      "systems": 7
+    },
+    "cbf": {
+      "full_verified": 7,
+      "ids": [
+        "DCB-EXT-P4-005",
+        "DCB-LIT-P3-002",
+        "DCB-LIT-P3-003",
+        "DCB-LIT-P4-003",
+        "DCB-LIT-P4-004",
+        "DCB-LIT-P4-005",
+        "DCB-LIT-P4-006",
+        "DCB-LIT-P4-009"
+      ],
+      "systems": 8
+    },
+    "fossil_generic": {
+      "full_verified": 38,
+      "ids": [
+        "DCB-EXT-P1-001",
+        "DCB-EXT-P1-002",
+        "DCB-EXT-P4-005",
+        "DCB-LIT-P1-002",
+        "DCB-LIT-P1-003",
+        "DCB-LIT-P1-004",
+        "DCB-LIT-P1-005",
+        "DCB-LIT-P1-006",
+        "DCB-LIT-P1-007",
+        "DCB-LIT-P1-008",
+        "DCB-LIT-P1-009",
+        "DCB-LIT-P1-011",
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-014",
+        "DCB-LIT-P1-015",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-017",
+        "DCB-LIT-P1-018",
+        "DCB-LIT-P1-019",
+        "DCB-LIT-P1-020",
+        "DCB-LIT-P1-021",
+        "DCB-LIT-P4-001",
+        "DCB-LIT-P4-002",
+        "DCB-LIT-P4-003",
+        "DCB-LIT-P4-004",
+        "DCB-LIT-P4-005",
+        "DCB-LIT-P4-006",
+        "DCB-LIT-P4-007",
+        "DCB-LIT-P4-008",
+        "DCB-LIT-P4-009",
+        "DCB-LIT-P4-010",
+        "DCB-LIT-P4-011",
+        "DCB-LIT-P4-019",
+        "DCB-LIT-P4-021",
+        "DCB-LIT-P4-022",
+        "DCB-LIT-P4-026",
+        "DCB-LIT-P4-035",
+        "DCB-LIT-P4-036",
+        "DCB-LIT-P4-037",
+        "DCB-LIT-P4-038",
+        "DCB-LIT-P4-039",
+        "DCB-LIT-P4-040",
+        "DCB-LIT-P4-041",
+        "DCB-LIT-P4-043",
+        "DCB-LIT-P4-044",
+        "DCB-LIT-P4-045",
+        "DCB-OURS-P1-001",
+        "DCB-OURS-P1-002",
+        "DCB-OURS-P4-001"
+      ],
+      "systems": 49
+    },
+    "synnlf": {
+      "full_verified": 8,
+      "ids": [
+        "DCB-LIT-P1-002",
+        "DCB-LIT-P1-006",
+        "DCB-LIT-P1-007",
+        "DCB-LIT-P1-008",
+        "DCB-LIT-P1-009",
+        "DCB-LIT-P1-013",
+        "DCB-LIT-P1-016",
+        "DCB-LIT-P1-020"
+      ],
+      "systems": 8
+    }
+  },
+  "union_systems": 51
+}

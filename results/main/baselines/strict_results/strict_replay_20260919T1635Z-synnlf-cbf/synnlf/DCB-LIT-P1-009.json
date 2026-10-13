@@ -1,0 +1,23 @@
+{
+  "artifact": "<BASELINE_STAGE_ROOT>/results/node8/synnlf/DCB-LIT-P1-009/seed-167/candidate.json",
+  "beta": 1000000,
+  "case_id": "DCB-LIT-P1-009",
+  "deg": [
+    2,
+    2,
+    0
+  ],
+  "expression": "2.93825976225923e-7*x1**2 + 1.3992363970647e-7*x1*x2 + 8.7530605250165e-7*x2**2",
+  "failure_reason": null,
+  "method": "synnlf",
+  "mosek_license": "<BASELINE_STAGE_ROOT>/envs/mosek.lic",
+  "native_eps_control_passed": true,
+  "native_tau": 0.0005,
+  "passed": true,
+  "schema_version": "baseline-native-strict.v1",
+  "strict_tau": 0.0,
+  "wall_seconds": 5.018218159675598,
+  "zone": {
+    "shape": "ball"
+  }
+}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use LLM2Cert or DynaCertBench, please cite the accompanying paper."
+type: software
+title: "LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification"
+repository-code: "https://github.com/FormalCert-AI/llm2cert"
+license: MIT
+authors:
+  - family-names: Cao
+    given-names: Zhipeng
+  - family-names: Song
+    given-names: Peiyang
+  - family-names: Vertovec
+    given-names: Nikolaus
+  - family-names: Cui
+    given-names: Weiru
+  - family-names: Yang
+    given-names: Zhihao
+  - family-names: Liu
+    given-names: Mingkang
+  - family-names: Lin
+    given-names: Luxia
+  - family-names: Xue
+    given-names: Bai
+  - family-names: Abate
+    given-names: Alessandro

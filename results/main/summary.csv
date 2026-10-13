@@ -1,0 +1,5 @@
+configuration,systems,verified
+Full,105,81
+SMT-only,105,57
+Lean-only,105,60
+One-shot,105,63

@@ -1,0 +1,7 @@
+certificate_class,strategy,systems,verified,mean_seconds_per_verified
+polynomial,All-SMT,41,41,1.650829830002494
+polynomial,All-Lean,41,30,511.9890542755524
+polynomial,Routed,41,41,2.4949873658536585
+non_polynomial,All-SMT,40,18,8.295541695836517
+non_polynomial,All-Lean,40,34,638.4429865810363
+non_polynomial,Routed,40,40,239.047124875

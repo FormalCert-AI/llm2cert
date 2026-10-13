@@ -1,0 +1,29 @@
+{
+  "env": {
+    "ibex_lib": "<BASELINE_STAGE_ROOT>/envs/fossil-libs",
+    "mosek_license": "<BASELINE_STAGE_ROOT>/envs/mosek.lic",
+    "stage_root": "<BASELINE_STAGE_ROOT>"
+  },
+  "methods": {
+    "analytical_rl": {
+      "cases": [
+        {
+          "case_id": "DCB-LIT-P1-015",
+          "failure_reason": "delta-sat",
+          "passed": false
+        }
+      ],
+      "failure_reasons": {
+        "delta-sat": 1
+      },
+      "method": "analytical_rl",
+      "native_accepted_denominator": 1,
+      "strict": "0/1",
+      "strict_passed": 0
+    }
+  },
+  "mode": "strict",
+  "schema_version": "baseline-native-strict.v1",
+  "stage_root": "<BASELINE_STAGE_ROOT>",
+  "stamp": "20260919T1645Z-analytical_rl"
+}

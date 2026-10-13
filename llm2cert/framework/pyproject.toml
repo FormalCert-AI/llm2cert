@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lean-barrier"
+version = "1.0.0"
+description = "Reproducible super-level barrier synthesis with SMT portfolio and Lean rescue"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "Lean Barrier contributors" }]
+dependencies = [
+  "mpmath>=1.3,<2",
+  "numpy>=2.0,<3",
+  "pydantic>=2.10,<3",
+  "scipy>=1.14,<2",
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.8,<4"]
+openai = ["openai>=2.0,<3"]
+dev = [
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.9,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lean_barrier"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = ["ISC004"]

@@ -1,0 +1,56 @@
+{
+  "artifact": "<BASELINE_STAGE_ROOT>/results/node10/analytical_rl_v7/DCB-LIT-P1-015/candidate.json",
+  "case_id": "DCB-LIT-P1-015",
+  "expression": "2*x2**2 + x3**2 + (-x1 + x3)**2",
+  "failure_reason": "delta-sat",
+  "method": "analytical_rl",
+  "native_note": "stage1 Native is SHGO; this sidecar adds paper dReal (GitHub has no script)",
+  "passed": false,
+  "schema_version": "baseline-native-strict.v1",
+  "strict_native_recheck": {
+    "all_queries_unsat": false,
+    "delta_margin": 0.0,
+    "delta_sat_counts_as_fail": true,
+    "origin_ball": "disabled_point_exclusion",
+    "queries": [
+      {
+        "delta": 6.14421235332821e-06,
+        "epsilon": 0.049787068367863944,
+        "label": "V_not_positive",
+        "mode": "native_paper",
+        "raw": null,
+        "status": "unsat",
+        "wall_seconds": 0.0005927809979766607
+      },
+      {
+        "delta": 6.14421235332821e-06,
+        "epsilon": 0.049787068367863944,
+        "label": "lie_not_negative",
+        "mode": "native_paper",
+        "raw": null,
+        "status": "unsat",
+        "wall_seconds": 0.12707548099569976
+      },
+      {
+        "delta": 0.0,
+        "epsilon": 0.0,
+        "label": "V_not_positive",
+        "mode": "strict",
+        "raw": null,
+        "status": "unsat",
+        "wall_seconds": 0.00033392099430784583
+      },
+      {
+        "delta": 0.0,
+        "epsilon": 0.0,
+        "label": "lie_not_negative",
+        "mode": "strict",
+        "raw": "x1 : [-0.00055431640625000001, -0.00054431640624999999]\nx2 : [-0.00061535156250000001, -0.00060535156249999999]\nx3 : [0.00060535156249999999, 0.00061535156250000001]",
+        "status": "delta-sat",
+        "wall_seconds": 0.006700567959342152
+      }
+    ],
+    "solver_precision": 1e-05
+  },
+  "wall_seconds": 1.531087014998775
+}

@@ -1,0 +1,49 @@
+-- Report axioms used by certificate verification theorems.
+import LeanBarrier
+import LeanBarrier.LyapunovExamples
+
+#print axioms LeanBarrier.discrete_superlevel_invariant
+#print axioms LeanBarrier.discrete_barrier_implies_safety
+#print axioms LeanBarrier.strict_boundary_scalar_preserves_nonnegative
+#print axioms LeanBarrier.continuous_strict_boundary_barrier_safety
+#print axioms LeanBarrier.fixed_parameter_continuous_strict_boundary_barrier_safety
+#print axioms LeanBarrier.continuous_barrier_implies_safety
+#print axioms LeanBarrier.Lyapunov.valueAlong_nonincreasing
+#print axioms LeanBarrier.Lyapunov.sublevel_preserved_on_Icc
+#print axioms LeanBarrier.Lyapunov.superlevel_preserved_on_Icc
+#print axioms LeanBarrier.Lyapunov.iterate_nonincreasing
+#print axioms LeanBarrier.Lyapunov.iterate_geometric_decay
+#print axioms LeanBarrier.Lyapunov.radiallyUnbounded_compact_sublevel
+#print axioms LeanBarrier.Lyapunov.compact_sublevel_of_continuous_bounded_superset
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_implies_stable_in
+#print axioms LeanBarrier.Lyapunov.discrete_lyapunov_implies_stable_in
+#print axioms LeanBarrier.Lyapunov.continuous_strict_lyapunov_implies_asymptotic_stable_in
+#print axioms LeanBarrier.Lyapunov.discrete_strict_lyapunov_implies_asymptotic_stable_in
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_implies_global_asymptotic_stability
+#print axioms LeanBarrier.Lyapunov.discrete_lyapunov_implies_global_asymptotic_stability
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_implies_roa
+#print axioms LeanBarrier.Lyapunov.discrete_lyapunov_implies_roa
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_sublevel_is_roa
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_sublevel_is_roa_of_subset_coordinateBox
+#print axioms LeanBarrier.Lyapunov.discrete_lyapunov_sublevel_is_roa
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_implies_exponential_bound
+#print axioms LeanBarrier.Lyapunov.discrete_lyapunov_implies_exponential_bound
+#print axioms LeanBarrier.Lyapunov.continuous_lyapunov_implies_exponential_stable_in
+#print axioms LeanBarrier.Lyapunov.discrete_lyapunov_implies_exponential_stable_in
+
+#print axioms LeanBarrier.Lyapunov.Examples.iterate_nonincreasing_sq_half
+#print axioms LeanBarrier.Lyapunov.Examples.iterate_geometric_sq_half
+#print axioms LeanBarrier.ContinuousCore.global_lie_nonnegative_preserves_superlevel
+#print axioms LeanBarrier.ContinuousCore.global_lie_nonnegative_barrier_safety
+#print axioms LeanBarrier.ContinuousCore.linear_classK_scalar_preserves_nonnegative
+#print axioms LeanBarrier.ContinuousCore.continuous_linear_classK_nagumo
+#print axioms LeanBarrier.ContinuousCore.continuous_global_lie_nagumo
+#print axioms LeanBarrier.ContinuousCore.Examples.paperBarrier_isGradient
+#print axioms LeanBarrier.ContinuousCore.Examples.paper_lie_nonnegative
+#print axioms LeanBarrier.ContinuousCore.Examples.paper_running_example_forwardInvariant
+#print axioms LeanBarrier.ContinuousCore.Examples.paper_initial_contained
+#print axioms LeanBarrier.ContinuousCore.Examples.paper_unsafe_separated
+#print axioms LeanBarrier.ContinuousCore.Examples.paper_running_example_safety
+#print axioms LeanBarrier.DSL.contDiff_eval
+#print axioms LeanBarrier.DSL.hasDerivAt_coordinate
+#print axioms LeanBarrier.Examples.discreteBarrier

@@ -1,0 +1,16 @@
+{
+  "artifact": "<BASELINE_STAGE_ROOT>/results/node8/cbf_p3/DCB-LIT-P3-002/candidate.onnx",
+  "case_id": "DCB-LIT-P3-002",
+  "failure_reason": null,
+  "method": "cbf",
+  "native_results": {
+    "certified_percentage": 100.00000000000004,
+    "computation_time": 1.914412021636963,
+    "iterations_per_second": 1094.8531331347187,
+    "total_samples": 2096,
+    "uncertified_percentage": 0.0
+  },
+  "passed": true,
+  "schema_version": "baseline-native-strict.v1",
+  "wall_seconds": 9.153809107840061
+}

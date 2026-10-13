@@ -1,0 +1,6994 @@
+{
+  "schema_version": "dynacertbench.executable",
+  "description": "Question-only executable DynaCertBench ordered by active LaTeX systeminstance blocks.",
+  "source_dataset": "dynacertbench_by_problem.json",
+  "paper_snapshot_id": "paper",
+  "record_count": 105,
+  "excluded_count": 0,
+  "records": [
+    {
+      "record_id": "DCB-LIT-P1-001",
+      "problem": {
+        "problem_id": "dcb_lit_p1_001",
+        "task_type": "stability",
+        "name": "DynaCertBench System 001 · DCB-LIT-P1-001 · Exercise~4.30, \\cite{khalil2002nonlinear}",
+        "dynamics": "dx1/dt = -((1)/(2))*tan(((pi*x1)/(2))+((pi)/(4)))+x2+((1)/(2)), dx2/dt = x1-((1)/(2))*tan(((pi*x2)/(2))+((pi)/(4)))+((1)/(2))",
+        "source": "paper System 1; canonical record DCB-LIT-P1-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(0.25)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-0.25",
+              "0.25"
+            ],
+            [
+              "-0.25",
+              "0.25"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-0.25",
+            "0.25"
+          ],
+          [
+            "-0.25",
+            "0.25"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 1,
+      "paper_system_label": "System 1",
+      "local_name": "S001__DCB-LIT-P1-001"
+    },
+    {
+      "record_id": "DCB-LIT-P1-002",
+      "problem": {
+        "problem_id": "dcb_lit_p1_002",
+        "task_type": "stability",
+        "name": "DynaCertBench System 002 · DCB-LIT-P1-002 · Table~1 row~1 (NonPoly0), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1+x1*x2, dx2/dt = -x2",
+        "source": "paper System 2; canonical record DCB-LIT-P1-002",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-002.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(1)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 2,
+      "paper_system_label": "System 2",
+      "local_name": "S002__DCB-LIT-P1-002"
+    },
+    {
+      "record_id": "DCB-LIT-P1-003",
+      "problem": {
+        "problem_id": "dcb_lit_p1_003",
+        "task_type": "stability",
+        "name": "DynaCertBench System 003 · DCB-LIT-P1-003 · Table~1 row~2 (NonPoly1), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1+2*x1**2*x2, dx2/dt = -x2",
+        "source": "paper System 3; canonical record DCB-LIT-P1-003",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-003.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            },
+            {
+              "lhs": "x1",
+              "relation": "ge",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x2",
+              "relation": "ge",
+              "rhs": "0"
+            }
+          ],
+          "bounds": [
+            [
+              "0",
+              "10"
+            ],
+            [
+              "0",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 3,
+      "paper_system_label": "System 3",
+      "local_name": "S003__DCB-LIT-P1-003"
+    },
+    {
+      "record_id": "DCB-LIT-P1-004",
+      "problem": {
+        "problem_id": "dcb_lit_p1_004",
+        "task_type": "stability",
+        "name": "DynaCertBench System 004 · DCB-LIT-P1-004 · Table~1 row~3 (NonPoly2), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1, dx2/dt = -2*x2+0.1*x1*x2**2+x3, dx3/dt = -x3-1.5*x2",
+        "source": "paper System 4; canonical record DCB-LIT-P1-004",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-004.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2 + x3**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            },
+            {
+              "lhs": "x1",
+              "relation": "ge",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x2",
+              "relation": "ge",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x3",
+              "relation": "ge",
+              "rhs": "0"
+            }
+          ],
+          "bounds": [
+            [
+              "0",
+              "10"
+            ],
+            [
+              "0",
+              "10"
+            ],
+            [
+              "0",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 4,
+      "paper_system_label": "System 4",
+      "local_name": "S004__DCB-LIT-P1-004"
+    },
+    {
+      "record_id": "DCB-LIT-P1-005",
+      "problem": {
+        "problem_id": "dcb_lit_p1_005",
+        "task_type": "stability",
+        "name": "DynaCertBench System 005 · DCB-LIT-P1-005 · Table~1 row~4 (NonPoly3), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -3*x1-0.1*x1*x2**3, dx2/dt = -x2+x3, dx3/dt = -x3",
+        "source": "paper System 5; canonical record DCB-LIT-P1-005",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-005.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2 + x3**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            },
+            {
+              "lhs": "x1",
+              "relation": "ge",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x2",
+              "relation": "ge",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x3",
+              "relation": "ge",
+              "rhs": "0"
+            }
+          ],
+          "bounds": [
+            [
+              "0",
+              "10"
+            ],
+            [
+              "0",
+              "10"
+            ],
+            [
+              "0",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "10"
+          ],
+          [
+            "0",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 5,
+      "paper_system_label": "System 5",
+      "local_name": "S005__DCB-LIT-P1-005"
+    },
+    {
+      "record_id": "DCB-LIT-P1-006",
+      "problem": {
+        "problem_id": "dcb_lit_p1_006",
+        "task_type": "stability",
+        "name": "DynaCertBench System 006 · DCB-LIT-P1-006 · Table~1 row~5 (Poly1), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1**3-x1*x3**2, dx2/dt = -x2-x1**2*x2, dx3/dt = -x3+3*x1**2*x3-3*x3",
+        "source": "paper System 6; canonical record DCB-LIT-P1-006",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-006.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2 + x3**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-10",
+              "10"
+            ],
+            [
+              "-10",
+              "10"
+            ],
+            [
+              "-10",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-10",
+            "10"
+          ],
+          [
+            "-10",
+            "10"
+          ],
+          [
+            "-10",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 6,
+      "paper_system_label": "System 6",
+      "local_name": "S006__DCB-LIT-P1-006"
+    },
+    {
+      "record_id": "DCB-LIT-P1-007",
+      "problem": {
+        "problem_id": "dcb_lit_p1_007",
+        "task_type": "stability",
+        "name": "DynaCertBench System 007 · DCB-LIT-P1-007 · Table~1 row~6 (Poly2), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1**3+x2, dx2/dt = -x1-x2",
+        "source": "paper System 7; canonical record DCB-LIT-P1-007",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-007.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-10",
+              "10"
+            ],
+            [
+              "-10",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-10",
+            "10"
+          ],
+          [
+            "-10",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 7,
+      "paper_system_label": "System 7",
+      "local_name": "S007__DCB-LIT-P1-007"
+    },
+    {
+      "record_id": "DCB-LIT-P1-008",
+      "problem": {
+        "problem_id": "dcb_lit_p1_008",
+        "task_type": "stability",
+        "name": "DynaCertBench System 008 · DCB-LIT-P1-008 · Table~1 row~7 (Poly3), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1**3-x2**2, dx2/dt = x1*x2-x2**3",
+        "source": "paper System 8; canonical record DCB-LIT-P1-008",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-008.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-10",
+              "10"
+            ],
+            [
+              "-10",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-10",
+            "10"
+          ],
+          [
+            "-10",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 8,
+      "paper_system_label": "System 8",
+      "local_name": "S008__DCB-LIT-P1-008"
+    },
+    {
+      "record_id": "DCB-LIT-P1-009",
+      "problem": {
+        "problem_id": "dcb_lit_p1_009",
+        "task_type": "stability",
+        "name": "DynaCertBench System 009 · DCB-LIT-P1-009 · Table~1 row~8 (Poly4), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1-1.5*x1**2*x2**3, dx2/dt = -x2**3+0.5*x1**3*x2**2",
+        "source": "paper System 9; canonical record DCB-LIT-P1-009",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-009.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(10)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-10",
+              "10"
+            ],
+            [
+              "-10",
+              "10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-10",
+            "10"
+          ],
+          [
+            "-10",
+            "10"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 9,
+      "paper_system_label": "System 9",
+      "local_name": "S009__DCB-LIT-P1-009"
+    },
+    {
+      "record_id": "DCB-LIT-P1-010",
+      "problem": {
+        "problem_id": "dcb_lit_p1_010",
+        "task_type": "stability",
+        "name": "DynaCertBench System 010 · DCB-LIT-P1-010 · Table~4 \\#2 (SineModel), \\cite{edwards2024fossil}",
+        "dynamics": "dx1/dt = x2+u1, dx2/dt = u2+((3/20)*(981/100)*(1/2)*sin(x1)-(1/10)*x2)/((3/20)*(1/2)**2)",
+        "source": "paper System 10; canonical record DCB-LIT-P1-010",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-010.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "controller_parameters": "u1,u2",
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(1)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 10,
+      "paper_system_label": "System 10",
+      "local_name": "S010__DCB-LIT-P1-010"
+    },
+    {
+      "record_id": "DCB-LIT-P1-011",
+      "problem": {
+        "problem_id": "dcb_lit_p1_011",
+        "task_type": "stability",
+        "name": "DynaCertBench System 011 · DCB-LIT-P1-011 · Table~4 \\#14 (DTAhmadi2), \\cite{edwards2024fossil}",
+        "dynamics": "x1[k+1] = 0.687*x1+0.558*x2-0.0001*x1*x2, x2[k+1] = -0.292*x1+0.773*x2",
+        "source": "paper System 11; canonical record DCB-LIT-P1-011",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-011.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(1)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 11,
+      "paper_system_label": "System 11",
+      "local_name": "S011__DCB-LIT-P1-011"
+    },
+    {
+      "record_id": "DCB-LIT-P1-012",
+      "problem": {
+        "problem_id": "dcb_lit_p1_012",
+        "task_type": "stability",
+        "name": "DynaCertBench System 012 · DCB-LIT-P1-012 · Table~4 \\#15 (DTAhmadi), \\cite{edwards2024fossil}",
+        "dynamics": "x1[k+1] = 0.3*x1+u1, x2[k+1] = -x1+0.5*x2+((7)/(18))*x1**2+u2",
+        "source": "paper System 12; canonical record DCB-LIT-P1-012",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-012.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner radius is provenance only; formal N includes the equilibrium."
+        ],
+        "controller_parameters": "u1,u2",
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(1)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 12,
+      "paper_system_label": "System 12",
+      "local_name": "S012__DCB-LIT-P1-012"
+    },
+    {
+      "record_id": "DCB-LIT-P1-013",
+      "problem": {
+        "problem_id": "dcb_lit_p1_013",
+        "task_type": "stability",
+        "name": "DynaCertBench System 013 · DCB-LIT-P1-013 · Table~1 row~4, \\cite{zou2025analytical}",
+        "dynamics": "dx1/dt = -3*x1**3+3*x1*x3-9*x1, dx2/dt = -x1**3-5*x2+5*x3**3, dx3/dt = -9*x3**3",
+        "source": "paper System 13; canonical record DCB-LIT-P1-013",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-013.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer box."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 13,
+      "paper_system_label": "System 13",
+      "local_name": "S013__DCB-LIT-P1-013"
+    },
+    {
+      "record_id": "DCB-LIT-P1-014",
+      "problem": {
+        "problem_id": "dcb_lit_p1_014",
+        "task_type": "stability",
+        "name": "DynaCertBench System 014 · DCB-LIT-P1-014 · Table~1 row~5, \\cite{zou2025analytical}",
+        "dynamics": "dx1/dt = x2, dx2/dt = -sin(x1)*cos(x1)-x2-sin(x3)*cos(x3), dx3/dt = x2-x3",
+        "source": "paper System 14; canonical record DCB-LIT-P1-014",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-014.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer box."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 14,
+      "paper_system_label": "System 14",
+      "local_name": "S014__DCB-LIT-P1-014"
+    },
+    {
+      "record_id": "DCB-LIT-P1-015",
+      "problem": {
+        "problem_id": "dcb_lit_p1_015",
+        "task_type": "stability",
+        "name": "DynaCertBench System 015 · DCB-LIT-P1-015 · Table~1 row~6, \\cite{zou2025analytical}",
+        "dynamics": "dq/dt = w1-w2, dw1/dt = (1/2)*(-1-2*w1-sin(q)+cos(q)), dw2/dt = (1/2)*(-1-2*w2+sin(q)+cos(q))",
+        "source": "paper System 15; canonical record DCB-LIT-P1-015",
+        "assumptions": [
+          "Audited center-of-inertia reduction with delta1=q/2 and delta2=-q/2.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer box."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-2",
+              "2"
+            ],
+            [
+              "-2",
+              "2"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-2",
+            "2"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 15,
+      "paper_system_label": "System 15",
+      "local_name": "S015__DCB-LIT-P1-015"
+    },
+    {
+      "record_id": "DCB-LIT-P1-016",
+      "problem": {
+        "problem_id": "dcb_lit_p1_016",
+        "task_type": "stability",
+        "name": "DynaCertBench System 016 · DCB-LIT-P1-016 · Table~1 row~7, \\cite{zou2025analytical}",
+        "dynamics": "dx1/dt = -x1+0.5*x2-0.1*x5**2, dx2/dt = -0.5*x1-x2, dx3/dt = -x3+0.5*x4-0.1*x1**2, dx4/dt = -0.5*x3-x4, dx5/dt = -x5+0.5*x6, dx6/dt = -0.5*x5-x6+0.1*x2**2",
+        "source": "paper System 16; canonical record DCB-LIT-P1-016",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-016.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer box."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 16,
+      "paper_system_label": "System 16",
+      "local_name": "S016__DCB-LIT-P1-016"
+    },
+    {
+      "record_id": "DCB-LIT-P1-017",
+      "problem": {
+        "problem_id": "dcb_lit_p1_017",
+        "task_type": "stability",
+        "name": "DynaCertBench System 017 · DCB-LIT-P1-017 · Table~1 row~8, \\cite{zou2025analytical}",
+        "dynamics": "dx1/dt = x2, dx2/dt = -((3)/(2))*x6*x4-2*x1-((5)/(2))*x2-((1)/(2))*x4*sin(x2)*cos(x4), dx3/dt = x4, dx4/dt = ((3)/(2))*x6*x2-2*x3-10*x4+((1)/(2))*x2*sin(x2)*cos(x4), dx5/dt = x6, dx6/dt = -5*x5-((4)/(5))*x6",
+        "source": "paper System 17; canonical record DCB-LIT-P1-017",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-017.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer box."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-3",
+              "3"
+            ],
+            [
+              "-3",
+              "3"
+            ],
+            [
+              "-3",
+              "3"
+            ],
+            [
+              "-3",
+              "3"
+            ],
+            [
+              "-3",
+              "3"
+            ],
+            [
+              "-3",
+              "3"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 17,
+      "paper_system_label": "System 17",
+      "local_name": "S017__DCB-LIT-P1-017"
+    },
+    {
+      "record_id": "DCB-LIT-P1-018",
+      "problem": {
+        "problem_id": "dcb_lit_p1_018",
+        "task_type": "stability",
+        "name": "DynaCertBench System 018 · DCB-LIT-P1-018 · Table~1 row~9, \\cite{zou2025analytical}",
+        "dynamics": "dd1/dt = w1-(w1+w2+w3)/3, dd2/dt = w2-(w1+w2+w3)/3, dw1/dt = -w1-(1/2)*(sin(d1-d2)+sin(2*d1+d2)), dw2/dt = -w2-(1/2)*(sin(d2-d1)+sin(d1+2*d2)), dw3/dt = -w3+(1/2)*(sin(2*d1+d2)+sin(d1+2*d2))",
+        "source": "paper System 18; canonical record DCB-LIT-P1-018",
+        "assumptions": [
+          "Audited center-of-inertia reduction with delta3=-(delta1+delta2).",
+          "The retained common-frequency mode decays; angle derivatives use omega_i minus the mean frequency.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer constrained region."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraints",
+          "bounds": [
+            [
+              "-0.75",
+              "0.75"
+            ],
+            [
+              "-0.75",
+              "0.75"
+            ],
+            [
+              "-1.2",
+              "1.2"
+            ],
+            [
+              "-1.2",
+              "1.2"
+            ],
+            [
+              "-1.2",
+              "1.2"
+            ]
+          ],
+          "constraints": [
+            {
+              "lhs": "d1+d2",
+              "relation": "le",
+              "rhs": "0.75"
+            },
+            {
+              "lhs": "d1+d2",
+              "relation": "ge",
+              "rhs": "-0.75"
+            }
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-0.75",
+            "0.75"
+          ],
+          [
+            "-0.75",
+            "0.75"
+          ],
+          [
+            "-1.2",
+            "1.2"
+          ],
+          [
+            "-1.2",
+            "1.2"
+          ],
+          [
+            "-1.2",
+            "1.2"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 18,
+      "paper_system_label": "System 18",
+      "local_name": "S018__DCB-LIT-P1-018"
+    },
+    {
+      "record_id": "DCB-LIT-P1-019",
+      "problem": {
+        "problem_id": "dcb_lit_p1_019",
+        "task_type": "stability",
+        "name": "DynaCertBench System 019 · DCB-LIT-P1-019 · Table~1 row~10, \\cite{zou2025analytical}",
+        "dynamics": "dx1/dt = -x1+0.5*x2-0.1*x5**2, dx2/dt = -0.5*x1-x2+0.1*x8, dx3/dt = -x3+0.5*x4-0.1*x1**2, dx4/dt = -0.5*x3-x4, dx5/dt = -x5+0.5*x6, dx6/dt = -0.5*x5-x6+0.1*x2**2, dx7/dt = x8, dx8/dt = -sin(x7)*cos(x7)-x8-sin(x9)*cos(x9)-0.1*x2, dx9/dt = x8-x9",
+        "source": "paper System 19; canonical record DCB-LIT-P1-019",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-019.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole is retained only as provenance; N is the origin-containing outer box."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ],
+            [
+              "-1.5",
+              "1.5"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ],
+          [
+            "-1.5",
+            "1.5"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 19,
+      "paper_system_label": "System 19",
+      "local_name": "S019__DCB-LIT-P1-019"
+    },
+    {
+      "record_id": "DCB-LIT-P1-020",
+      "problem": {
+        "problem_id": "dcb_lit_p1_020",
+        "task_type": "stability",
+        "name": "DynaCertBench System 020 · DCB-LIT-P1-020 · Appendix Table~6, \\cite{zou2025analytical}",
+        "dynamics": "dx1/dt = -8*x1*x2**2-10*x2**4, dx2/dt = -8*x2**3+3*x2**2-8*x2, dx3/dt = -x3",
+        "source": "paper System 20; canonical record DCB-LIT-P1-020",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-020.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source epsilon inner hole and epsilon-stability label are retained only as provenance; the formal task uses the origin-containing outer box and ordinary local Lyapunov stability."
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_lyapunov",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 20,
+      "paper_system_label": "System 20",
+      "local_name": "S020__DCB-LIT-P1-020"
+    },
+    {
+      "record_id": "DCB-LIT-P1-021",
+      "problem": {
+        "problem_id": "dcb_lit_p1_021",
+        "task_type": "stability",
+        "name": "DynaCertBench System 021 · DCB-LIT-P1-021 · Main theorem, \\cite{liu2026globally}",
+        "dynamics": "dx1/dt = 4*x1**3-x1**2*x2-6*x1*x2**2-x2**3, dx2/dt = x1**3+4*x1**2*x2+x1*x2**2-6*x2**3",
+        "source": "paper System 21; canonical record DCB-LIT-P1-021",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P1-021.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "global_asymptotic",
+        "neighborhood": {
+          "type": "unbounded"
+        },
+        "analysis_bounds": [
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 21,
+      "paper_system_label": "System 21",
+      "local_name": "S021__DCB-LIT-P1-021"
+    },
+    {
+      "record_id": "DCB-LIT-P2-001",
+      "problem": {
+        "problem_id": "dcb_lit_p2_001",
+        "task_type": "roa",
+        "name": "DynaCertBench System 022 · DCB-LIT-P2-001 · Section~5.3 and Appendix~C.3.3, \\cite{zhou2022neural}",
+        "dynamics": "dx1/dt = x2, dx2/dt = ((3/20)*(981/100)*(1/2)*sin(x1)+(20*tanh(-(23286329/1000000)*x1-(105411/20000)*x2))-(1/10)*x2)/((3/20)*(1/2)**2)",
+        "source": "paper System 22; canonical record DCB-LIT-P2-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P2-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "4"
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 22,
+      "paper_system_label": "System 22",
+      "local_name": "S022__DCB-LIT-P2-001"
+    },
+    {
+      "record_id": "DCB-LIT-P2-002",
+      "problem": {
+        "problem_id": "dcb_lit_p2_002",
+        "task_type": "roa",
+        "name": "DynaCertBench System 023 · DCB-LIT-P2-002 · Section~5.1 and Appendix~C.3.1, \\cite{zhou2022neural}",
+        "dynamics": "dx1/dt = -x2, dx2/dt = x1 + (x1**2 - 1)*x2",
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "ball",
+          "center": [
+            0,
+            0
+          ],
+          "radius": "6/5"
+        },
+        "analysis_bounds": [
+          [
+            "-6/5",
+            "6/5"
+          ],
+          [
+            "-6/5",
+            "6/5"
+          ]
+        ],
+        "source": "paper System 23; canonical record DCB-LIT-P2-002",
+        "assumptions": [
+          "The formal neighborhood is the closed ball x1^2+x2^2 <= (6/5)^2.",
+          "No separate initial set is supplied; the target is to certify Omega_c itself."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 23,
+      "paper_system_label": "System 23",
+      "local_name": "S023__DCB-LIT-P2-002"
+    },
+    {
+      "record_id": "DCB-LIT-P2-003",
+      "problem": {
+        "problem_id": "dcb_lit_p2_003",
+        "task_type": "roa",
+        "name": "DynaCertBench System 024 · DCB-LIT-P2-003 · Example~3.1, \\cite{liu2023towards}",
+        "dynamics": "dx/dt = -x + x**3",
+        "equilibrium": [
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "constraint",
+          "lhs": "x**2",
+          "relation": "lt",
+          "rhs": "1",
+          "bounds": [
+            [
+              -1,
+              1
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ]
+        ],
+        "source": "paper System 24; canonical record DCB-LIT-P2-003",
+        "assumptions": [
+          "The strict constraint x^2 < 1 represents the source neighborhood (-1,1).",
+          "No separate initial set is supplied; the target is to certify Omega_c itself."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 24,
+      "paper_system_label": "System 24",
+      "local_name": "S024__DCB-LIT-P2-003"
+    },
+    {
+      "record_id": "DCB-LIT-P2-004",
+      "problem": {
+        "problem_id": "dcb_lit_p2_004",
+        "task_type": "roa",
+        "name": "DynaCertBench System 025 · DCB-LIT-P2-004 · Example~6.2 and Table~II, \\cite{liu2023towards}",
+        "dynamics": "dx1/dt = x2, dx2/dt = -2*x1 + 1/3*x1**3 - x2",
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              -6,
+              6
+            ],
+            [
+              -6,
+              6
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -6,
+            6
+          ],
+          [
+            -6,
+            6
+          ]
+        ],
+        "source": "paper System 25; canonical record DCB-LIT-P2-004",
+        "assumptions": [
+          "No separate initial set is supplied; the target is to certify Omega_c itself."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 25,
+      "paper_system_label": "System 25",
+      "local_name": "S025__DCB-LIT-P2-004"
+    },
+    {
+      "record_id": "DCB-LIT-P2-005",
+      "problem": {
+        "problem_id": "dcb_lit_p2_005",
+        "task_type": "roa",
+        "name": "DynaCertBench System 026 · DCB-LIT-P2-005 · Table~4 \\#3 (LorenzSystem), \\cite{edwards2024fossil}",
+        "dynamics": "dx1/dt = -10*(x1-x2) + u1, dx2/dt = 28*x1 - x2 - x1*x3 + u2, dx3/dt = x1*x2 - 8/3*x3 + u3",
+        "controller_parameters": "u1,u2,u3",
+        "equilibrium": [
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "ball",
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "radius": 2
+        },
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "radius": "3/10"
+        },
+        "analysis_bounds": [
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ]
+        ],
+        "source": "paper System 26; canonical record DCB-LIT-P2-005",
+        "assumptions": [
+          "The source leaves u1,u2,u3 unconstrained over the reals, so no artificial control box is imposed.",
+          "The supplied initial ball must be contained in the synthesized Omega_c."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 26,
+      "paper_system_label": "System 26",
+      "local_name": "S026__DCB-LIT-P2-005"
+    },
+    {
+      "record_id": "DCB-LIT-P2-006",
+      "paper_system_number": 27,
+      "paper_system_label": "System 27",
+      "local_name": "S027__DCB-LIT-P2-006",
+      "problem": {
+        "problem_id": "dcb_lit_p2_006",
+        "task_type": "roa",
+        "name": "DynaCertBench System 027 · DCB-LIT-P2-006 · Example~5.2 and Table~2, \\cite{liu2024tool}",
+        "dynamics": "dx1/dt = x2, dx2/dt = -1/2*x2-sin(x1+pi/3)+sin(pi/3)",
+        "source": "paper System 27; canonical record DCB-LIT-P2-006",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 27.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The final sine offset is positive in PDF 4-20, making the origin an equilibrium."
+        ],
+        "analysis_bounds": [
+          [
+            "-2",
+            "3"
+          ],
+          [
+            "-3",
+            "3/2"
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-2",
+              "3"
+            ],
+            [
+              "-3",
+              "3/2"
+            ]
+          ]
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-LIT-P2-007",
+      "problem": {
+        "problem_id": "dcb_lit_p2_007",
+        "task_type": "roa",
+        "name": "DynaCertBench System 028 · DCB-LIT-P2-007 · Example~5.4 and Table~3, \\cite{liu2024tool}",
+        "dynamics": "dx1/dt = -x1 + 1/2*x2 - 1/10*x9**2, dx2/dt = -1/2*x1 - x2, dx3/dt = -x3 + 1/2*x4 - 1/10*x1**2, dx4/dt = -1/2*x3 - x4, dx5/dt = -x5 + 1/2*x6 + 1/10*x7**2, dx6/dt = -1/2*x5 - x6, dx7/dt = -x7 + 1/2*x8, dx8/dt = -1/2*x7 - x8, dx9/dt = -x9 + 1/2*x10, dx10/dt = -1/2*x9 - x10 + 1/10*x2**2",
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "source": "paper System 28; canonical record DCB-LIT-P2-007",
+        "assumptions": [
+          "No separate initial set is supplied; the target is to certify Omega_c itself."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 28,
+      "paper_system_label": "System 28",
+      "local_name": "S028__DCB-LIT-P2-007"
+    },
+    {
+      "record_id": "DCB-LIT-P2-008",
+      "problem": {
+        "problem_id": "dcb_lit_p2_008",
+        "task_type": "roa",
+        "name": "DynaCertBench System 029 · DCB-LIT-P2-008 · Section~5.1, with verification details in Appendix~E.2 (\\(n=1\\)), \\cite{meng2024physics}",
+        "dynamics": "dx/dt = -x - x**3",
+        "equilibrium": [
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              -1,
+              1
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ]
+        ],
+        "source": "paper System 29; canonical record DCB-LIT-P2-008",
+        "assumptions": [
+          "No separate initial set is supplied; the target is to certify Omega_c itself."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 29,
+      "paper_system_label": "System 29",
+      "local_name": "S029__DCB-LIT-P2-008"
+    },
+    {
+      "record_id": "DCB-LIT-P3-001",
+      "problem": {
+        "problem_id": "dcb_lit_p3_001",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 030 · DCB-LIT-P3-001 · Appendix~A.1 (PVTOL), \\cite{wu2023neural}",
+        "dynamics": "x1[k+1] = x1+1/20*(x4*cos(x3)-x5*sin(x3)), x2[k+1] = x2+1/20*(x4*sin(x3)+x5*cos(x3)), x3[k+1] = x3+1/20*x6, x4[k+1] = x4+1/20*(x5*x6-49/5*sin(x3)), x5[k+1] = x5+1/20*(-x4*x6-49/5*cos(x3)+(u1+u2)/4), x6[k+1] = x6+1/20*((1/4)/(19/400)*(u1-u2))",
+        "source": "paper System 30; canonical record DCB-LIT-P3-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P3-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u1,u2",
+        "control_bounds": [
+          [
+            0,
+            "196/5"
+          ],
+          [
+            0,
+            "196/5"
+          ]
+        ],
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe"
+      },
+      "candidate": null,
+      "paper_system_number": 30,
+      "paper_system_label": "System 30",
+      "local_name": "S030__DCB-LIT-P3-001"
+    },
+    {
+      "record_id": "DCB-LIT-P3-002",
+      "problem": {
+        "problem_id": "dcb_lit_p3_002",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 031 · DCB-LIT-P3-002 · Example~1, \\cite{samanipour2026relu}",
+        "dynamics": "dx1/dt = x2, dx2/dt = sin(x1)-3*x1-3*x2",
+        "source": "paper System 31; canonical record DCB-LIT-P3-002",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P3-002.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The paper fixes u=-3*x1-3*x2; it is substituted into the closed-loop dynamics, not synthesized as a free input."
+        ],
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(pi)",
+              "pi"
+            ],
+            [
+              "-(pi)",
+              "pi"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe"
+      },
+      "candidate": null,
+      "paper_system_number": 31,
+      "paper_system_label": "System 31",
+      "local_name": "S031__DCB-LIT-P3-002"
+    },
+    {
+      "record_id": "DCB-LIT-P3-003",
+      "problem": {
+        "problem_id": "dcb_lit_p3_003",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 032 · DCB-LIT-P3-003 · Example~2, \\cite{samanipour2026relu}",
+        "dynamics": "dx1/dt = x1**2+x1*x2+x1, dx2/dt = x1*x2+x2**2+x2",
+        "source": "paper System 32; canonical record DCB-LIT-P3-003",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P3-003.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-2",
+            "2"
+          ]
+        ],
+        "safety_interpretation": "conditional_in_X"
+      },
+      "candidate": null,
+      "paper_system_number": 32,
+      "paper_system_label": "System 32",
+      "local_name": "S032__DCB-LIT-P3-003"
+    },
+    {
+      "record_id": "DCB-LIT-P3-004",
+      "problem": {
+        "problem_id": "dcb_lit_p3_004",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 033 · DCB-LIT-P3-004 · Example~3, \\cite{samanipour2026relu}",
+        "dynamics": "dx1/dt = x2, dx2/dt = ((x1+2.4109*x2+34.3620*x3+10.7009*x4)+(1/10)*x4**2*sin(x3)-(981/1000)*sin(x3)*cos(x3))/(1+(1/10)*sin(x3)**2), dx3/dt = x4, dx4/dt = ((10791/1000)*sin(x3)-(x1+2.4109*x2+34.3620*x3+10.7009*x4)*cos(x3)-(1/10)*x4**2*sin(x3)*cos(x3))/(1+(1/10)*sin(x3)**2)",
+        "source": "paper System 33; canonical record DCB-LIT-P3-004",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P3-004.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The paper's fixed linear policy is substituted exactly into the closed-loop dynamics; its stated range is [-30,30]."
+        ],
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ],
+            [
+              "-(1)",
+              "1"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe"
+      },
+      "candidate": null,
+      "paper_system_number": 33,
+      "paper_system_label": "System 33",
+      "local_name": "S033__DCB-LIT-P3-004"
+    },
+    {
+      "record_id": "DCB-LIT-P3-005",
+      "problem": {
+        "problem_id": "dcb_lit_p3_005",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 034 · DCB-LIT-P3-005 · Section~6.1.1, \\cite{vaisi2025extracting}",
+        "dynamics": "x1[k+1] = x1+0.01*x2, x2[k+1] = x2+0.01*(9.8*sin(x1)+u)",
+        "source": "paper System 34; canonical record DCB-LIT-P3-005",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P3-005.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u",
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(pi/4)",
+              "pi/4"
+            ],
+            [
+              "-(pi/4)",
+              "pi/4"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe",
+        "control_bounds": [
+          [
+            -10,
+            10
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 34,
+      "paper_system_label": "System 34",
+      "local_name": "S034__DCB-LIT-P3-005"
+    },
+    {
+      "record_id": "DCB-LIT-P3-006",
+      "problem": {
+        "problem_id": "dcb_lit_p3_006",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 035 · DCB-LIT-P3-006 · Section~6.1.2, \\cite{vaisi2025extracting}",
+        "dynamics": "x1[k+1] = x2, x2[k+1] = 29.4*sin(x1)+300*cos(x1)*tan(x3)+15*u*cos(x1)*cos(x3)**2, x3[k+1] = u",
+        "source": "paper System 35; canonical record DCB-LIT-P3-006",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P3-006.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u",
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(11/5)",
+              "11/5"
+            ],
+            [
+              "-(11/5)",
+              "11/5"
+            ],
+            [
+              "-(11/5)",
+              "11/5"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe",
+        "control_bounds": [
+          [
+            -10,
+            10
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 35,
+      "paper_system_label": "System 35",
+      "local_name": "S035__DCB-LIT-P3-006"
+    },
+    {
+      "record_id": "DCB-LIT-P4-001",
+      "problem": {
+        "problem_id": "dcb_lit_p4_001",
+        "task_type": "safety",
+        "name": "DynaCertBench System 036 · DCB-LIT-P4-001 · Theorem~4, \\cite{sogokon2018vector}",
+        "dynamics": "dx1/dt = x2, dx2/dt = x1",
+        "source": "paper System 36; canonical record DCB-LIT-P4-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1",
+              "relation": "le",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x2",
+              "relation": "le",
+              "rhs": "0"
+            }
+          ]
+        },
+        "unsafe_set": {
+          "type": "constraint",
+          "lhs": "x1",
+          "relation": "gt",
+          "rhs": "0"
+        },
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 36,
+      "paper_system_label": "System 36",
+      "local_name": "S036__DCB-LIT-P4-001"
+    },
+    {
+      "record_id": "DCB-LIT-P4-002",
+      "problem": {
+        "problem_id": "dcb_lit_p4_002",
+        "task_type": "safety",
+        "name": "DynaCertBench System 037 · DCB-LIT-P4-002 · Example~1, \\cite{sogokon2018vector}",
+        "dynamics": "dx1/dt = 2*x1+x2+2*x3-x1**2+x1*x3-x3**2, dx2/dt = -2+x1-x2-x2**2, dx3/dt = -2-x2-x3+x1**2-x1*x3",
+        "source": "paper System 37; canonical record DCB-LIT-P4-002",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-002.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1",
+              "relation": "le",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x2",
+              "relation": "le",
+              "rhs": "0"
+            },
+            {
+              "lhs": "x3",
+              "relation": "le",
+              "rhs": "0"
+            }
+          ]
+        },
+        "unsafe_set": {
+          "type": "constraint",
+          "lhs": "x1+x2+x3",
+          "relation": "ge",
+          "rhs": "1"
+        },
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 37,
+      "paper_system_label": "System 37",
+      "local_name": "S037__DCB-LIT-P4-002"
+    },
+    {
+      "record_id": "DCB-LIT-P4-003",
+      "problem": {
+        "problem_id": "dcb_lit_p4_003",
+        "task_type": "safety",
+        "name": "DynaCertBench System 038 · DCB-LIT-P4-003 · Example~3.1, \\cite{zhao2020synthesizing}",
+        "dynamics": "dx1/dt = x2, dx2/dt = -x1+((1)/(3))*x1**3-x2",
+        "source": "paper System 38; canonical record DCB-LIT-P4-003",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-003.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "3/2",
+            "0"
+          ],
+          "radius": "1/2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "-1",
+            "-1"
+          ],
+          "radius": "2/5"
+        },
+        "analysis_bounds": [
+          [
+            "-7/2",
+            "2"
+          ],
+          [
+            "-2",
+            "1"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 38,
+      "paper_system_label": "System 38",
+      "local_name": "S038__DCB-LIT-P4-003"
+    },
+    {
+      "record_id": "DCB-LIT-P4-004",
+      "problem": {
+        "problem_id": "dcb_lit_p4_004",
+        "task_type": "safety",
+        "name": "DynaCertBench System 039 · DCB-LIT-P4-004 · Table~1 row~9 (Barr1), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = x2+2*x1*x2, dx2/dt = -x1-x2**2+2*x1**2",
+        "source": "paper System 39; canonical record DCB-LIT-P4-004",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-004.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "2"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "constraint",
+          "lhs": "x1+x2**2",
+          "relation": "le",
+          "rhs": "0",
+          "bounds": [
+            [
+              "-2",
+              "2"
+            ],
+            [
+              "-2",
+              "2"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-2",
+            "2"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 39,
+      "paper_system_label": "System 39",
+      "local_name": "S039__DCB-LIT-P4-004"
+    },
+    {
+      "record_id": "DCB-LIT-P4-005",
+      "problem": {
+        "problem_id": "dcb_lit_p4_005",
+        "task_type": "safety",
+        "name": "DynaCertBench System 040 · DCB-LIT-P4-005 · Table~1 row~12 (Barr4), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = sin(x3), dx2/dt = cos(x3), dx3/dt = -sin(x3)+((3*(x1*sin(x3)+x2*cos(x3)))/(0.5+x1**2+x2**2))",
+        "source": "paper System 40; canonical record DCB-LIT-P4-005",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-005.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-2",
+              "-9/5"
+            ],
+            [
+              "-13/25",
+              "13/25"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "constraint",
+          "lhs": "x1**2+x2**2",
+          "relation": "le",
+          "rhs": "1/25",
+          "bounds": [
+            [
+              "-2",
+              "2"
+            ],
+            [
+              "-2",
+              "2"
+            ],
+            [
+              "-157/100",
+              "157/100"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-157/100",
+            "157/100"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 40,
+      "paper_system_label": "System 40",
+      "local_name": "S040__DCB-LIT-P4-005"
+    },
+    {
+      "record_id": "DCB-LIT-P4-006",
+      "problem": {
+        "problem_id": "dcb_lit_p4_006",
+        "task_type": "safety",
+        "name": "DynaCertBench System 041 · DCB-LIT-P4-006 · Table~1 row~17 (Hi-Ord8), \\cite{abate2021fossil}",
+        "dynamics": "dx0/dt = x1, dx1/dt = x2, dx2/dt = x3, dx3/dt = x4, dx4/dt = x5, dx5/dt = x6, dx6/dt = x7, dx7/dt = -(20*x7 + 170*x6 + 800*x5 + 2273*x4 + 3980*x3 + 4180*x2 + 2400*x1 + 576*x0)",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ]
+        ],
+        "source": "paper System 41; canonical record DCB-LIT-P4-006",
+        "assumptions": [
+          "The working domain is X=[-11/5, 11/5]^8.",
+          "The initial set is [9/10, 11/10]^8.",
+          "The unsafe set is [-11/5, -9/5]^8."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 41,
+      "paper_system_label": "System 41",
+      "local_name": "S041__DCB-LIT-P4-006"
+    },
+    {
+      "record_id": "DCB-LIT-P4-007",
+      "problem": {
+        "problem_id": "dcb_lit_p4_007",
+        "task_type": "safety",
+        "name": "DynaCertBench System 042 · DCB-LIT-P4-007 · Table~1 (arch2[36], instance~1), \\cite{wu2024completeness}",
+        "dynamics": "dx1/dt = x1**2+x2**2-1, dx2/dt = 5*(x1*x2-1)",
+        "source": "paper System 42; canonical record DCB-LIT-P4-007",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-007.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "2"
+          ],
+          "radius": "3/2"
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-3",
+              "-1"
+            ],
+            [
+              "-3",
+              "-2"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -4,
+            4
+          ],
+          [
+            -4,
+            4
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 42,
+      "paper_system_label": "System 42",
+      "local_name": "S042__DCB-LIT-P4-007"
+    },
+    {
+      "record_id": "DCB-LIT-P4-008",
+      "problem": {
+        "problem_id": "dcb_lit_p4_008",
+        "task_type": "safety",
+        "name": "DynaCertBench System 043 · DCB-LIT-P4-008 · Table~1 (arch3[36], instance~1), \\cite{wu2024completeness}",
+        "dynamics": "dx1/dt = x1-x1**3+x2-x1*x2**2, dx2/dt = -x1+x2-x1**2*x2-x2**3",
+        "source": "paper System 43; canonical record DCB-LIT-P4-008",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-008.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "1/5"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "5/2",
+            "5/2"
+          ],
+          "radius": "1/2"
+        },
+        "analysis_bounds": [
+          [
+            -1,
+            4
+          ],
+          [
+            -1,
+            4
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 43,
+      "paper_system_label": "System 43",
+      "local_name": "S043__DCB-LIT-P4-008"
+    },
+    {
+      "record_id": "DCB-LIT-P4-009",
+      "problem": {
+        "problem_id": "dcb_lit_p4_009",
+        "task_type": "safety",
+        "name": "DynaCertBench System 044 · DCB-LIT-P4-009 · Example~5 and Table~1, \\cite{liu2015abstraction}",
+        "dynamics": "dx1/dt = exp(-x1)+x2-1, dx2/dt = -sin(x1)**2",
+        "source": "paper System 44; canonical record DCB-LIT-P4-009",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-009.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "-1/2",
+            "1/2"
+          ],
+          "radius": "2/5"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "7/10",
+            "-7/10"
+          ],
+          "radius": "3/10"
+        },
+        "analysis_bounds": [
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 44,
+      "paper_system_label": "System 44",
+      "local_name": "S044__DCB-LIT-P4-009"
+    },
+    {
+      "record_id": "DCB-LIT-P4-010",
+      "problem": {
+        "problem_id": "dcb_lit_p4_010",
+        "task_type": "safety",
+        "name": "DynaCertBench System 045 · DCB-LIT-P4-010 · Example~6 and Table~1, \\cite{liu2015abstraction}",
+        "dynamics": "dx1/dt = -(((1/5)*10*x1*x2)/(x1+x2+x3))-(1/125)*x1, dx2/dt = (((1/5)*10*x1*x2)/(x1+x2+x3))-((1/125)+(1/10))*x2, dx3/dt = 1/10*x2-19/20*x3",
+        "source": "paper System 45; canonical record DCB-LIT-P4-010",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-010.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "1997/200",
+              "1999/200"
+            ],
+            [
+              "1/200",
+              "3/200"
+            ],
+            [
+              "0",
+              "3/1000"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "constraint",
+          "lhs": "x3",
+          "relation": "gt",
+          "rhs": "1"
+        },
+        "analysis_bounds": [
+          [
+            0,
+            "10013/1000"
+          ],
+          [
+            0,
+            "10013/1000"
+          ],
+          [
+            0,
+            "10013/1000"
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 45,
+      "paper_system_label": "System 45",
+      "local_name": "S045__DCB-LIT-P4-010"
+    },
+    {
+      "record_id": "DCB-LIT-P4-011",
+      "problem": {
+        "problem_id": "dcb_lit_p4_011",
+        "task_type": "safety",
+        "name": "DynaCertBench System 046 · DCB-LIT-P4-011 · Table~1 (lotka[14], instance~1), \\cite{wu2024completeness}",
+        "dynamics": "dx1/dt = x1*(1-x3), dx2/dt = x2*(1-2*x3), dx3/dt = x3*(x1+x2-1)",
+        "source": "paper System 46; canonical record DCB-LIT-P4-011",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-011.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "1",
+            "1",
+            "3/2"
+          ],
+          "radius": "3/10"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "-1",
+            "-1",
+            "-3/2"
+          ],
+          "radius": "3/10"
+        },
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 46,
+      "paper_system_label": "System 46",
+      "local_name": "S046__DCB-LIT-P4-011"
+    },
+    {
+      "record_id": "DCB-LIT-P4-012",
+      "problem": {
+        "problem_id": "dcb_lit_p4_012",
+        "task_type": "safety",
+        "name": "DynaCertBench System 047 · DCB-LIT-P4-012 · Table~4 \\#5 (ctrlbarr obstacle), \\cite{edwards2024fossil}",
+        "dynamics": "dx1/dt = sin(x3), dx2/dt = cos(x3), dx3/dt = -sin(x3)+u1",
+        "source": "paper System 47; canonical record DCB-LIT-P4-012",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-012.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u1",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "-pi/2",
+              "pi/2"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-9",
+              "-7"
+            ],
+            [
+              "-9",
+              "-6"
+            ],
+            [
+              "-pi/2",
+              "pi/2"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -4,
+            4
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 47,
+      "paper_system_label": "System 47",
+      "local_name": "S047__DCB-LIT-P4-012"
+    },
+    {
+      "record_id": "DCB-LIT-P4-013",
+      "problem": {
+        "problem_id": "dcb_lit_p4_013",
+        "task_type": "safety",
+        "name": "DynaCertBench System 048 · DCB-LIT-P4-013 · Table~4 \\#17 (ctrlbarr 2roomtemp DT), \\cite{edwards2024fossil}",
+        "dynamics": "x1[k+1] = 0.725*x1+0.25*x2+0.375+0.018*(55-x1)*u1, x2[k+1] = 0.25*x1+0.71*x2+0.6+0.018*(55-x2)*u2",
+        "source": "paper System 48; canonical record DCB-LIT-P4-013",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-013.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u1,u2",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "17",
+              "18"
+            ],
+            [
+              "17",
+              "18"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "28",
+              "30"
+            ],
+            [
+              "28",
+              "30"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            17,
+            30
+          ],
+          [
+            17,
+            30
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 48,
+      "paper_system_label": "System 48",
+      "local_name": "S048__DCB-LIT-P4-013"
+    },
+    {
+      "record_id": "DCB-LIT-P4-014",
+      "problem": {
+        "problem_id": "dcb_lit_p4_014",
+        "task_type": "safety",
+        "name": "DynaCertBench System 049 · DCB-LIT-P4-014 · ~\\texttt{S001}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.8*x1-0.15*x2+0.2*x1**(2)+u1, dx3/dt = -0.1*x3+0.1*x1+u2",
+        "source": "paper System 49; canonical record DCB-LIT-P4-014",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-014.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.4"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 49,
+      "paper_system_label": "System 49",
+      "local_name": "S049__DCB-LIT-P4-014"
+    },
+    {
+      "record_id": "DCB-LIT-P4-015",
+      "problem": {
+        "problem_id": "dcb_lit_p4_015",
+        "task_type": "safety",
+        "name": "DynaCertBench System 050 · DCB-LIT-P4-015 · ~\\texttt{S002}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.95*sin(x1)-0.02*x2+0.01*x3+u1, dx3/dt = -0.1*x3+0.02*x1+u2, dx4/dt = -0.03*x4+0.01*x2+u3",
+        "source": "paper System 50; canonical record DCB-LIT-P4-015",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-015.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.3"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "2.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 50,
+      "paper_system_label": "System 50",
+      "local_name": "S050__DCB-LIT-P4-015"
+    },
+    {
+      "record_id": "DCB-LIT-P4-016",
+      "problem": {
+        "problem_id": "dcb_lit_p4_016",
+        "task_type": "safety",
+        "name": "DynaCertBench System 051 · DCB-LIT-P4-016 · ~\\texttt{S004}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = 10*(x2-x1)+u0, dx2/dt = 28*x1-x2-x1*x3+u1, dx3/dt = x1*x2-((8)/(3))*x3+u2, dx4/dt = -x2*x3+2.7*x4+u3",
+        "source": "paper System 51; canonical record DCB-LIT-P4-016",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-016.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.1"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "25",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-26",
+            "26"
+          ],
+          [
+            "-26",
+            "26"
+          ],
+          [
+            "-26",
+            "26"
+          ],
+          [
+            "-26",
+            "26"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 51,
+      "paper_system_label": "System 51",
+      "local_name": "S051__DCB-LIT-P4-016"
+    },
+    {
+      "record_id": "DCB-LIT-P4-017",
+      "problem": {
+        "problem_id": "dcb_lit_p4_017",
+        "task_type": "safety",
+        "name": "DynaCertBench System 052 · DCB-LIT-P4-017 · ~\\texttt{S008}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -2*x1+6.7*x2-x2*x3+u0, dx2/dt = x1+u1, dx3/dt = -x3+x2**(2)+u2",
+        "source": "paper System 52; canonical record DCB-LIT-P4-017",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-017.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 52,
+      "paper_system_label": "System 52",
+      "local_name": "S052__DCB-LIT-P4-017"
+    },
+    {
+      "record_id": "DCB-LIT-P4-018",
+      "problem": {
+        "problem_id": "dcb_lit_p4_018",
+        "task_type": "safety",
+        "name": "DynaCertBench System 053 · DCB-LIT-P4-018 · ~\\texttt{S011}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.3*x1-0.2*(1+cos(x1))*x2-0.1*x1**(3)+u1",
+        "source": "paper System 53; canonical record DCB-LIT-P4-018",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-018.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "0.6"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "2",
+            "2"
+          ],
+          "radius": "1"
+        },
+        "analysis_bounds": [
+          [
+            "-8/5",
+            "4"
+          ],
+          [
+            "-8/5",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 53,
+      "paper_system_label": "System 53",
+      "local_name": "S053__DCB-LIT-P4-018"
+    },
+    {
+      "record_id": "DCB-LIT-P4-019",
+      "problem": {
+        "problem_id": "dcb_lit_p4_019",
+        "task_type": "safety",
+        "name": "DynaCertBench System 054 · DCB-LIT-P4-019 · ~\\texttt{S019}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -x1+x2*x3, dx2/dt = -x2+x1*x3, dx3/dt = -x3-x1*x2",
+        "source": "paper System 54; canonical record DCB-LIT-P4-019",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-019.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "1",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-2",
+            "2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 54,
+      "paper_system_label": "System 54",
+      "local_name": "S054__DCB-LIT-P4-019"
+    },
+    {
+      "record_id": "DCB-LIT-P4-020",
+      "problem": {
+        "problem_id": "dcb_lit_p4_020",
+        "task_type": "safety",
+        "name": "DynaCertBench System 055 · DCB-LIT-P4-020 · ~\\texttt{S024}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -x1-0.4*x2+0.15*sin(x3)+u1, dx3/dt = x4+u2, dx4/dt = -0.6*x3-0.3*x4+u3",
+        "source": "paper System 55; canonical record DCB-LIT-P4-020",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-020.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "0.5",
+              "0.8"
+            ],
+            [
+              "0.3",
+              "0.6"
+            ],
+            [
+              "0.5",
+              "0.8"
+            ],
+            [
+              "0.3",
+              "0.6"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "union",
+          "sets": [
+            {
+              "type": "box",
+              "bounds": [
+                [
+                  "2.5",
+                  "3.5"
+                ],
+                [
+                  "2",
+                  "3"
+                ],
+                [
+                  "2.5",
+                  "3.5"
+                ],
+                [
+                  "2",
+                  "3"
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "bounds": [
+                [
+                  "-3.5",
+                  "-2.5"
+                ],
+                [
+                  "-3",
+                  "-2"
+                ],
+                [
+                  "-3.5",
+                  "-2.5"
+                ],
+                [
+                  "-3",
+                  "-2"
+                ]
+              ]
+            }
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1/2",
+            "9/5"
+          ],
+          [
+            "-7/10",
+            "8/5"
+          ],
+          [
+            "-1/2",
+            "9/5"
+          ],
+          [
+            "-7/10",
+            "8/5"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 55,
+      "paper_system_label": "System 55",
+      "local_name": "S055__DCB-LIT-P4-020"
+    },
+    {
+      "record_id": "DCB-LIT-P4-021",
+      "problem": {
+        "problem_id": "dcb_lit_p4_021",
+        "task_type": "safety",
+        "name": "DynaCertBench System 056 · DCB-LIT-P4-021 · ~\\texttt{S028}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.4*x1+0.25*x2*x3-0.15*x1**(3), dx2/dt = -0.5*x2+0.3*x1*x3-0.2*x2**(3), dx3/dt = -0.6*x3+0.2*x1*x2-0.18*x1**(2)*x2",
+        "source": "paper System 56; canonical record DCB-LIT-P4-021",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-021.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.5"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 56,
+      "paper_system_label": "System 56",
+      "local_name": "S056__DCB-LIT-P4-021"
+    },
+    {
+      "record_id": "DCB-LIT-P4-022",
+      "problem": {
+        "problem_id": "dcb_lit_p4_022",
+        "task_type": "safety",
+        "name": "DynaCertBench System 057 · DCB-LIT-P4-022 · ~\\texttt{S031}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.3*x1+0.2*x2*x4-0.15*x3**(2), dx2/dt = -0.4*x2+0.25*x1*x3-0.18*x2*x4, dx3/dt = -0.5*x3+0.3*x1*x4+0.12*x2**(2), dx4/dt = -0.6*x4+0.2*x2*x3-0.1*x1**(2)*x4",
+        "source": "paper System 57; canonical record DCB-LIT-P4-022",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-022.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.4"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 57,
+      "paper_system_label": "System 57",
+      "local_name": "S057__DCB-LIT-P4-022"
+    },
+    {
+      "record_id": "DCB-LIT-P4-023",
+      "problem": {
+        "problem_id": "dcb_lit_p4_023",
+        "task_type": "safety",
+        "name": "DynaCertBench System 058 · DCB-LIT-P4-023 · ~\\texttt{S036}, \\cite{taheri2025barrierbench}",
+        "dynamics": "x1[k+1] = 0.85*x1[k]+u0[k], x2[k+1] = 0.8*x2[k]+0.15*x1[k]+u1[k]",
+        "source": "paper System 58; canonical record DCB-LIT-P4-023",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-023.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "1.5",
+              "2"
+            ],
+            [
+              "1.2",
+              "1.8"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "union",
+          "sets": [
+            {
+              "type": "box",
+              "bounds": [
+                [
+                  "4.5",
+                  "5.5"
+                ],
+                [
+                  "4",
+                  "5"
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "bounds": [
+                [
+                  "-5.5",
+                  "-4.5"
+                ],
+                [
+                  "-5",
+                  "-4"
+                ]
+              ]
+            }
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "1/2",
+            "3"
+          ],
+          [
+            "1/5",
+            "14/5"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 58,
+      "paper_system_label": "System 58",
+      "local_name": "S058__DCB-LIT-P4-023"
+    },
+    {
+      "record_id": "DCB-LIT-P4-024",
+      "problem": {
+        "problem_id": "dcb_lit_p4_024",
+        "task_type": "safety",
+        "name": "DynaCertBench System 059 · DCB-LIT-P4-024 · ~\\texttt{S037}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.2*x1-0.1*(x1**(2)-1)*x2+u1",
+        "source": "paper System 59; canonical record DCB-LIT-P4-024",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-024.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "0.5"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "2.8",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-19/5",
+            "19/5"
+          ],
+          [
+            "-19/5",
+            "19/5"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 59,
+      "paper_system_label": "System 59",
+      "local_name": "S059__DCB-LIT-P4-024"
+    },
+    {
+      "record_id": "DCB-LIT-P4-025",
+      "problem": {
+        "problem_id": "dcb_lit_p4_025",
+        "task_type": "safety",
+        "name": "DynaCertBench System 060 · DCB-LIT-P4-025 · ~\\texttt{S042}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.6*x1-0.1*x2+0.05*x3+u1, dx3/dt = x4+u2, dx4/dt = -0.8*x3-0.15*x4+0.05*x1+u3",
+        "source": "paper System 60; canonical record DCB-LIT-P4-025",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-025.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.6"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 60,
+      "paper_system_label": "System 60",
+      "local_name": "S060__DCB-LIT-P4-025"
+    },
+    {
+      "record_id": "DCB-LIT-P4-026",
+      "problem": {
+        "problem_id": "dcb_lit_p4_026",
+        "task_type": "safety",
+        "name": "DynaCertBench System 061 · DCB-LIT-P4-026 · ~\\texttt{S048}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.5*x1+0.3*x2*sin(x3)-0.1*x1**(2)*x2, dx2/dt = -0.6*x2+0.5*x1*cos(x3)+0.15*x3**(2)*x1, dx3/dt = -0.7*x3-0.1*x3**(3)",
+        "source": "paper System 61; canonical record DCB-LIT-P4-026",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-026.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.4"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 61,
+      "paper_system_label": "System 61",
+      "local_name": "S061__DCB-LIT-P4-026"
+    },
+    {
+      "record_id": "DCB-LIT-P4-027",
+      "problem": {
+        "problem_id": "dcb_lit_p4_027",
+        "task_type": "safety",
+        "name": "DynaCertBench System 062 · DCB-LIT-P4-027 · ~\\texttt{S052}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = x3+u1, dx3/dt = -6*x3-2.92*x2-1.2*x1+x1**(2)+u2",
+        "source": "paper System 62; canonical record DCB-LIT-P4-027",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-027.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.1"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "2",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ],
+          [
+            "-3",
+            "3"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 62,
+      "paper_system_label": "System 62",
+      "local_name": "S062__DCB-LIT-P4-027"
+    },
+    {
+      "record_id": "DCB-LIT-P4-028",
+      "problem": {
+        "problem_id": "dcb_lit_p4_028",
+        "task_type": "safety",
+        "name": "DynaCertBench System 063 · DCB-LIT-P4-028 · ~\\texttt{S057}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -x1+0.08*x2+x1**(2)*x2+u0, dx2/dt = 0.6-0.08*x2-x1**(2)*x2+u1",
+        "source": "paper System 63; canonical record DCB-LIT-P4-028",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-028.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "0.1",
+              "0.5"
+            ],
+            [
+              "1",
+              "2"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 63,
+      "paper_system_label": "System 63",
+      "local_name": "S063__DCB-LIT-P4-028"
+    },
+    {
+      "record_id": "DCB-LIT-P4-029",
+      "problem": {
+        "problem_id": "dcb_lit_p4_029",
+        "task_type": "safety",
+        "name": "DynaCertBench System 064 · DCB-LIT-P4-029 · ~\\texttt{S058}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.1*x1-0.05*x2+0.02*x1*x3+u1, dx3/dt = -0.2*x3+0.1*x1+u2",
+        "source": "paper System 64; canonical record DCB-LIT-P4-029",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-029.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.5"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 64,
+      "paper_system_label": "System 64",
+      "local_name": "S064__DCB-LIT-P4-029"
+    },
+    {
+      "record_id": "DCB-LIT-P4-030",
+      "problem": {
+        "problem_id": "dcb_lit_p4_030",
+        "task_type": "safety",
+        "name": "DynaCertBench System 065 · DCB-LIT-P4-030 · ~\\texttt{S059}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.25*x1-x2**(2)-x3**(2)+0.75+u0, dx2/dt = -x2+x1*x3+u1, dx3/dt = -x3+x1*x2-0.1*x1+u2",
+        "source": "paper System 65; canonical record DCB-LIT-P4-030",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-030.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 65,
+      "paper_system_label": "System 65",
+      "local_name": "S065__DCB-LIT-P4-030"
+    },
+    {
+      "record_id": "DCB-LIT-P4-031",
+      "problem": {
+        "problem_id": "dcb_lit_p4_031",
+        "task_type": "safety",
+        "name": "DynaCertBench System 066 · DCB-LIT-P4-031 · ~\\texttt{S060}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x1*(x1-0.1)*(1-x1)-0.3*x1*x2+u0, dx2/dt = -0.2*x2+0.1*x1*x2+u1",
+        "source": "paper System 66; canonical record DCB-LIT-P4-031",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-031.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "0.2",
+              "0.8"
+            ],
+            [
+              "0.1",
+              "0.6"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "1.5",
+              "2"
+            ],
+            [
+              "1",
+              "1.5"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-4/5",
+            "3"
+          ],
+          [
+            "-9/10",
+            "5/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 66,
+      "paper_system_label": "System 66",
+      "local_name": "S066__DCB-LIT-P4-031"
+    },
+    {
+      "record_id": "DCB-LIT-P4-032",
+      "problem": {
+        "problem_id": "dcb_lit_p4_032",
+        "task_type": "safety",
+        "name": "DynaCertBench System 067 · DCB-LIT-P4-032 · ~\\texttt{S062}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -x1+x2*x3+u1, dx3/dt = 1-x2**(2)+u2",
+        "source": "paper System 67; canonical record DCB-LIT-P4-032",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-032.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "2.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 67,
+      "paper_system_label": "System 67",
+      "local_name": "S067__DCB-LIT-P4-032"
+    },
+    {
+      "record_id": "DCB-LIT-P4-033",
+      "problem": {
+        "problem_id": "dcb_lit_p4_033",
+        "task_type": "safety",
+        "name": "DynaCertBench System 068 · DCB-LIT-P4-033 · ~\\texttt{S076}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x3+x2*x1+u0, dx2/dt = -x2-x1**(2)+u1, dx3/dt = -x1-0.5*x3+u2",
+        "source": "paper System 68; canonical record DCB-LIT-P4-033",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-033.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.3"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ],
+          [
+            "-9/2",
+            "9/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 68,
+      "paper_system_label": "System 68",
+      "local_name": "S068__DCB-LIT-P4-033"
+    },
+    {
+      "record_id": "DCB-LIT-P4-034",
+      "problem": {
+        "problem_id": "dcb_lit_p4_034",
+        "task_type": "safety",
+        "name": "DynaCertBench System 069 · DCB-LIT-P4-034 · ~\\texttt{S077}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.8*x1-0.3*x2*(1+x1**(2))+0.1*x3+u1, dx3/dt = x4+u2, dx4/dt = -0.9*x3-0.25*x4*(1+x3**(2))+0.1*x1+u3",
+        "source": "paper System 69; canonical record DCB-LIT-P4-034",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-034.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.35"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "2.8",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-19/5",
+            "19/5"
+          ],
+          [
+            "-19/5",
+            "19/5"
+          ],
+          [
+            "-19/5",
+            "19/5"
+          ],
+          [
+            "-19/5",
+            "19/5"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 69,
+      "paper_system_label": "System 69",
+      "local_name": "S069__DCB-LIT-P4-034"
+    },
+    {
+      "record_id": "DCB-LIT-P4-035",
+      "problem": {
+        "problem_id": "dcb_lit_p4_035",
+        "task_type": "safety",
+        "name": "DynaCertBench System 070 · DCB-LIT-P4-035 · ~\\texttt{S087}, \\cite{taheri2025barrierbench}",
+        "dynamics": "x1[k+1] = -1/100*x2, x2[k+1] = 1/100*x1",
+        "formal_domain": "unbounded",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "1/10",
+              "2/5"
+            ],
+            [
+              "1/10",
+              "11/20"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "9/20",
+              "1/2"
+            ],
+            [
+              "3/5",
+              1
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ]
+        ],
+        "source": "paper System 70; canonical record DCB-LIT-P4-035",
+        "assumptions": [
+          "The source declares X = R^2, so all formal conditions are global.",
+          "The displayed Euler map simplifies exactly to x1+ = -x2/100 and x2+ = x1/100.",
+          "The finite analysis box is only a FastCheck screening box."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 70,
+      "paper_system_label": "System 70",
+      "local_name": "S070__DCB-LIT-P4-035"
+    },
+    {
+      "record_id": "DCB-LIT-P4-036",
+      "problem": {
+        "problem_id": "dcb_lit_p4_036",
+        "task_type": "safety",
+        "name": "DynaCertBench System 071 · DCB-LIT-P4-036 · ~\\texttt{U000}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.5*x1+0.3*x2, dx2/dt = -0.4*x2+0.15*cos(x1)*sin(x3), dx3/dt = -0.6*x3+0.1*sin(x2)*cos(x4), dx4/dt = -0.5*x4",
+        "source": "paper System 71; canonical record DCB-LIT-P4-036",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-036.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.3"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "2.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 71,
+      "paper_system_label": "System 71",
+      "local_name": "S071__DCB-LIT-P4-036"
+    },
+    {
+      "record_id": "DCB-LIT-P4-037",
+      "problem": {
+        "problem_id": "dcb_lit_p4_037",
+        "task_type": "safety",
+        "name": "DynaCertBench System 072 · DCB-LIT-P4-037 · ~\\texttt{U001}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.3*x1+0.5*sin(x2), dx2/dt = -0.4*x2-0.6*sin(x1)+0.1*sin(x3), dx3/dt = -0.5*x3+0.2*sin(x1)*sin(x2)",
+        "source": "paper System 72; canonical record DCB-LIT-P4-037",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-037.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.4"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ],
+          [
+            "-4",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 72,
+      "paper_system_label": "System 72",
+      "local_name": "S072__DCB-LIT-P4-037"
+    },
+    {
+      "record_id": "DCB-LIT-P4-038",
+      "problem": {
+        "problem_id": "dcb_lit_p4_038",
+        "task_type": "safety",
+        "name": "DynaCertBench System 073 · DCB-LIT-P4-038 · ~\\texttt{U002}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.3*x1+0.2*sin(x2)*exp(-x3**(2)), dx2/dt = -0.4*x2+0.15*cos(x1)*exp(-x1**(2)), dx3/dt = -0.5*x3+0.1*sin(x1+x2)",
+        "source": "paper System 73; canonical record DCB-LIT-P4-038",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-038.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.45"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "3.2",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-21/5",
+            "21/5"
+          ],
+          [
+            "-21/5",
+            "21/5"
+          ],
+          [
+            "-21/5",
+            "21/5"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 73,
+      "paper_system_label": "System 73",
+      "local_name": "S073__DCB-LIT-P4-038"
+    },
+    {
+      "record_id": "DCB-LIT-P4-039",
+      "problem": {
+        "problem_id": "dcb_lit_p4_039",
+        "task_type": "safety",
+        "name": "DynaCertBench System 074 · DCB-LIT-P4-039 · ~\\texttt{U003}, \\cite{taheri2025barrierbench}",
+        "dynamics": "x1[k+1] = 4/5*x1 + 1/10*sin(x2), x2[k+1] = 17/20*x2 + 2/25*x1*x3, x3[k+1] = 9/10*x3 + 2/25*cos(x1*x2)",
+        "formal_domain": "unbounded",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "1/10",
+              "2/5"
+            ],
+            [
+              "1/10",
+              "3/10"
+            ],
+            [
+              "1/10",
+              "2/5"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              2,
+              "5/2"
+            ],
+            [
+              "9/5",
+              "11/5"
+            ],
+            [
+              "9/5",
+              "23/10"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "source": "paper System 74; canonical record DCB-LIT-P4-039",
+        "assumptions": [
+          "The source declares X = R^3, so all formal conditions are global.",
+          "The finite analysis box is only a FastCheck screening box.",
+          "BarrierBench reports no successful source certificate for U003."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 74,
+      "paper_system_label": "System 74",
+      "local_name": "S074__DCB-LIT-P4-039"
+    },
+    {
+      "record_id": "DCB-LIT-P4-040",
+      "problem": {
+        "problem_id": "dcb_lit_p4_040",
+        "task_type": "safety",
+        "name": "DynaCertBench System 075 · DCB-LIT-P4-040 · ~\\texttt{U004}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.65*x1 + 0.1*x2**2*cos(x3), dx2/dt = -0.7*x2 + 0.12*sin(x1)*tanh(x4), dx3/dt = -0.75*x3 + 0.08*x1*x2, dx4/dt = -0.6*x4 + 0.06*(x1 + x2)",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "1/5",
+              "1/2"
+            ],
+            [
+              "-3/10",
+              "0"
+            ],
+            [
+              "1/10",
+              "2/5"
+            ],
+            [
+              "-1/5",
+              "1/10"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-11/5",
+              "-17/10"
+            ],
+            [
+              "8/5",
+              "21/10"
+            ],
+            [
+              "-19/10",
+              "-7/5"
+            ],
+            [
+              "13/10",
+              "9/5"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "formal_domain": "unbounded",
+        "source": "paper System 75; canonical record DCB-LIT-P4-040",
+        "assumptions": [
+          "The catalogue states X = R^4; formal verification is global. The box [-3,3]^4 is used only for FastCheck screening.",
+          "The initial set is [1/5,1/2] x [-3/10,0] x [1/10,2/5] x [-1/5,1/10].",
+          "The unsafe set is [-11/5,-17/10] x [8/5,21/10] x [-19/10,-7/5] x [13/10,9/5]."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 75,
+      "paper_system_label": "System 75",
+      "local_name": "S075__DCB-LIT-P4-040"
+    },
+    {
+      "record_id": "DCB-LIT-P4-041",
+      "problem": {
+        "problem_id": "dcb_lit_p4_041",
+        "task_type": "safety",
+        "name": "DynaCertBench System 076 · DCB-LIT-P4-041 · ~\\texttt{U005}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.58*x1+0.12*sin(x2)*cos(x3), dx2/dt = -0.62*x2+0.1*exp(-x1**(2))*tanh(x3), dx3/dt = -0.66*x3+0.08*sin(x1*x2)*exp(-x3**(2))",
+        "source": "paper System 76; canonical record DCB-LIT-P4-041",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-041.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-0.3",
+              "0.2"
+            ],
+            [
+              "0.1",
+              "0.4"
+            ],
+            [
+              "-0.2",
+              "0.3"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-2.3",
+              "-1.8"
+            ],
+            [
+              "1.7",
+              "2.2"
+            ],
+            [
+              "-2",
+              "-1.5"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-33/10",
+            "6/5"
+          ],
+          [
+            "-9/10",
+            "16/5"
+          ],
+          [
+            "-3",
+            "13/10"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 76,
+      "paper_system_label": "System 76",
+      "local_name": "S076__DCB-LIT-P4-041"
+    },
+    {
+      "record_id": "DCB-LIT-P4-042",
+      "problem": {
+        "problem_id": "dcb_lit_p4_042",
+        "task_type": "safety",
+        "name": "DynaCertBench System 077 · DCB-LIT-P4-042 · ~\\texttt{U006}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = u0*cos(x3), dx2/dt = u0*sin(x3), dx3/dt = u1",
+        "source": "paper System 77; canonical record DCB-LIT-P4-042",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-042.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The unsafe set is the complement of the outer box, as specified by complement=true in the source JSON."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-0.5",
+              "0.5"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-3.14",
+              "3.14"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-207/50",
+            "207/50"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 77,
+      "paper_system_label": "System 77",
+      "local_name": "S077__DCB-LIT-P4-042"
+    },
+    {
+      "record_id": "DCB-LIT-P4-043",
+      "problem": {
+        "problem_id": "dcb_lit_p4_043",
+        "task_type": "safety",
+        "name": "DynaCertBench System 078 · DCB-LIT-P4-043 · ~\\texttt{U007}, \\cite{taheri2025barrierbench}",
+        "dynamics": "x1[k+1] = 0.75*x1[k]+0.1*tanh(x2[k])*tanh(x3[k]), x2[k+1] = 0.82*x2[k]+0.09*sin(x1[k])*exp(-x3[k]**(2)), x3[k+1] = 0.79*x3[k]+0.08*cos(x1[k])*cos(x2[k])",
+        "source": "paper System 78; canonical record DCB-LIT-P4-043",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-043.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "1",
+            "-0.5",
+            "0.8"
+          ],
+          "radius": "0.5"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "-2.5",
+            "2",
+            "-2.2"
+          ],
+          "radius": "0.6"
+        },
+        "analysis_bounds": [
+          [
+            "-41/10",
+            "5/2"
+          ],
+          [
+            "-2",
+            "18/5"
+          ],
+          [
+            "-19/5",
+            "23/10"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 78,
+      "paper_system_label": "System 78",
+      "local_name": "S078__DCB-LIT-P4-043"
+    },
+    {
+      "record_id": "DCB-LIT-P4-044",
+      "problem": {
+        "problem_id": "dcb_lit_p4_044",
+        "task_type": "safety",
+        "name": "DynaCertBench System 079 · DCB-LIT-P4-044 · ~\\texttt{U008}, \\cite{taheri2025barrierbench}",
+        "dynamics": "x1[k+1] = 0.73*x1[k]+0.13*sin(x2[k])*tanh(x3[k]), x2[k+1] = 0.89*x2[k]+0.17*cos(x1[k]**(2))*exp(-x3[k]**(2)), x3[k+1] = 0.64*x3[k]+0.22*tanh(x1[k]*x2[k])",
+        "source": "paper System 79; canonical record DCB-LIT-P4-044",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-044.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0.9",
+            "-0.7",
+            "1.2"
+          ],
+          "radius": "0.55"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "-3.1",
+            "2.8",
+            "-2.6"
+          ],
+          "radius": "0.75"
+        },
+        "analysis_bounds": [
+          [
+            "-97/20",
+            "49/20"
+          ],
+          [
+            "-9/4",
+            "91/20"
+          ],
+          [
+            "-87/20",
+            "11/4"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 79,
+      "paper_system_label": "System 79",
+      "local_name": "S079__DCB-LIT-P4-044"
+    },
+    {
+      "record_id": "DCB-LIT-P4-045",
+      "problem": {
+        "problem_id": "dcb_lit_p4_045",
+        "task_type": "safety",
+        "name": "DynaCertBench System 080 · DCB-LIT-P4-045 · ~\\texttt{U009}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = -0.62*x1+0.1*sin(x2+x3), dx2/dt = -0.67*x2+0.08*cos(x1)*exp(-x3**(2)), dx3/dt = -0.64*x3+0.09*tanh(x1)*sin(x2)",
+        "source": "paper System 80; canonical record DCB-LIT-P4-045",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-LIT-P4-045.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-0.2",
+              "0.3"
+            ],
+            [
+              "0.1",
+              "0.5"
+            ],
+            [
+              "-0.3",
+              "0.2"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "2",
+              "2.6"
+            ],
+            [
+              "-2.4",
+              "-1.8"
+            ],
+            [
+              "2.1",
+              "2.7"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-6/5",
+            "18/5"
+          ],
+          [
+            "-17/5",
+            "3/2"
+          ],
+          [
+            "-13/10",
+            "37/10"
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 80,
+      "paper_system_label": "System 80",
+      "local_name": "S080__DCB-LIT-P4-045"
+    },
+    {
+      "record_id": "DCB-EXT-P1-001",
+      "problem": {
+        "problem_id": "dcb_ext_p1_001",
+        "task_type": "stability",
+        "name": "DynaCertBench System 081 · DCB-EXT-P1-001 · Extend-Table~1 row~1 (NonPoly0), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1+x1*x2, dx2/dt = -x2",
+        "source": "paper System 81; canonical record DCB-EXT-P1-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P1-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The target is global asymptotic stability; uniform Euclidean global exponential stability is not claimed."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "global_asymptotic",
+        "neighborhood": {
+          "type": "unbounded"
+        },
+        "analysis_bounds": [
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 81,
+      "paper_system_label": "System 81",
+      "local_name": "S081__DCB-EXT-P1-001"
+    },
+    {
+      "record_id": "DCB-EXT-P1-002",
+      "problem": {
+        "problem_id": "dcb_ext_p1_002",
+        "task_type": "stability",
+        "name": "DynaCertBench System 082 · DCB-EXT-P1-002 · Extend-Table~1 row~6 (Poly2), \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = -x1**3+x2, dx2/dt = -x1-x2",
+        "source": "paper System 82; canonical record DCB-EXT-P1-002",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P1-002.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "global_exponential",
+        "neighborhood": {
+          "type": "unbounded"
+        },
+        "analysis_bounds": [
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "formal_domain": "unbounded"
+      },
+      "candidate": null,
+      "paper_system_number": 82,
+      "paper_system_label": "System 82",
+      "local_name": "S082__DCB-EXT-P1-002"
+    },
+    {
+      "record_id": "DCB-EXT-P1-003",
+      "problem": {
+        "problem_id": "dcb_ext_p1_003",
+        "task_type": "stability",
+        "name": "DynaCertBench System 083 · DCB-EXT-P1-003 · Extend-Table~4 \\#2 (SineModel), \\cite{edwards2024fossil}",
+        "dynamics": "dx1/dt = x2+u1, dx2/dt = u2+((3/20)*(981/100)*(1/2)*sin(x1)-(1/10)*x2)/((3/20)*(1/2)**2)",
+        "source": "paper System 83; canonical record DCB-EXT-P1-003",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P1-005.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u1,u2",
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_exponential",
+        "neighborhood": {
+          "type": "constraints",
+          "constraints": [
+            {
+              "lhs": "x1**2 + x2**2",
+              "relation": "le",
+              "rhs": "(1)**2"
+            }
+          ],
+          "bounds": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1",
+            "1"
+          ],
+          [
+            "-1",
+            "1"
+          ]
+        ],
+        "control_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 83,
+      "paper_system_label": "System 83",
+      "local_name": "S083__DCB-EXT-P1-003"
+    },
+    {
+      "record_id": "DCB-EXT-P2-001",
+      "problem": {
+        "problem_id": "dcb_ext_p2_001",
+        "task_type": "roa",
+        "name": "DynaCertBench System 084 · DCB-EXT-P2-001 · Extend-Section~5.2 and Appendix~C.3.2, \\cite{zhou2022neural}",
+        "dynamics": "dx1/dt = sin(x2), dx2/dt = u-cos(x2)/(1-x1)",
+        "controller_parameters": "u",
+        "controller_observations": {
+          "u": [
+            "x1",
+            "x2"
+          ]
+        },
+        "control_bounds": [
+          [
+            -5,
+            5
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "ball",
+          "center": [
+            0,
+            0
+          ],
+          "radius": "4/5"
+        },
+        "analysis_bounds": [
+          [
+            "-4/5",
+            "4/5"
+          ],
+          [
+            "-4/5",
+            "4/5"
+          ]
+        ],
+        "source": "paper System 84; canonical record DCB-EXT-P2-001",
+        "assumptions": [
+          "The source controller and annular epsilon-ROA result are provenance only; this extension jointly synthesizes a new full-state feedback controller, Lyapunov function, and exact level c.",
+          "The controller must remain in [-5,5] on the certified sublevel set Omega_c.",
+          "The closed-loop equilibrium obligation is checked independently; for these dynamics it forces u(0,0)=1, not 0.",
+          "No separate initial set is supplied; the target is to certify Omega_c itself inside x1^2+x2^2 <= (4/5)^2."
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 84,
+      "paper_system_label": "System 84",
+      "local_name": "S084__DCB-EXT-P2-001"
+    },
+    {
+      "record_id": "DCB-EXT-P3-001",
+      "problem": {
+        "problem_id": "dcb_ext_p3_001",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 085 · DCB-EXT-P3-001 · Extend--2D quadrotor, \\cite{meng2024physics}",
+        "dynamics": "dx1/dt = x4, dx2/dt = x5, dx3/dt = x6, dx4/dt = 9.81*sin(x3)+sin(x3)*u1, dx5/dt = -9.81+9.81*cos(x3)+cos(x3)*u1, dx6/dt = u2",
+        "source": "paper System 85; canonical record DCB-EXT-P3-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P3-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u1,u2",
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe",
+        "control_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 85,
+      "paper_system_label": "System 85",
+      "local_name": "S085__DCB-EXT-P3-001"
+    },
+    {
+      "record_id": "DCB-EXT-P3-002",
+      "problem": {
+        "problem_id": "dcb_ext_p3_002",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 086 · DCB-EXT-P3-002 · Extend--3D quadrotor, \\cite{meng2024physics}",
+        "dynamics": "dx1/dt = x4, dx2/dt = x5, dx3/dt = x6, dx4/dt = -9.81*sin(x8)-sin(x8)*u1, dx5/dt = 9.81*cos(x8)*sin(x7)+cos(x8)*sin(x7)*u1, dx6/dt = 9.81*cos(x8)*cos(x7)-9.81+cos(x8)*cos(x7)*u1, dx7/dt = u2, dx8/dt = u3, dx9/dt = u4",
+        "source": "paper System 86; canonical record DCB-EXT-P3-002",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P3-002.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u1,u2,u3,u4",
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ],
+            [
+              "-(1/5)",
+              "1/5"
+            ]
+          ],
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ],
+          [
+            "-1/5",
+            "1/5"
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe",
+        "control_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 86,
+      "paper_system_label": "System 86",
+      "local_name": "S086__DCB-EXT-P3-002"
+    },
+    {
+      "record_id": "DCB-EXT-P4-001",
+      "problem": {
+        "problem_id": "dcb_ext_p4_001",
+        "task_type": "safety",
+        "name": "DynaCertBench System 087 · DCB-EXT-P4-001 · Extend-\\texttt{S002}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.95*sin(x1)-0.02*x2+0.01*x3+u1, dx3/dt = -0.1*x3+0.02*x1+u2, dx4/dt = -0.03*x4+0.01*x2+u3",
+        "source": "paper System 87; canonical record DCB-EXT-P4-001",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P4-001.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "0.3"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "radius": "2.5",
+          "complement": true
+        },
+        "analysis_bounds": [
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ],
+          [
+            "-7/2",
+            "7/2"
+          ]
+        ],
+        "formal_domain": "unbounded",
+        "control_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 87,
+      "paper_system_label": "System 87",
+      "local_name": "S087__DCB-EXT-P4-001"
+    },
+    {
+      "record_id": "DCB-EXT-P4-002",
+      "problem": {
+        "problem_id": "dcb_ext_p4_002",
+        "task_type": "safety",
+        "name": "DynaCertBench System 088 · DCB-EXT-P4-002 · Extend-\\texttt{S011}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -0.3*x1-0.2*(1+cos(x1))*x2-0.1*x1**(3)+u1",
+        "source": "paper System 88; canonical record DCB-EXT-P4-002",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P4-002.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1",
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "0.6"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "2",
+            "2"
+          ],
+          "radius": "1"
+        },
+        "analysis_bounds": [
+          [
+            "-8/5",
+            "4"
+          ],
+          [
+            "-8/5",
+            "4"
+          ]
+        ],
+        "formal_domain": "unbounded",
+        "control_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 88,
+      "paper_system_label": "System 88",
+      "local_name": "S088__DCB-EXT-P4-002"
+    },
+    {
+      "record_id": "DCB-EXT-P4-003",
+      "problem": {
+        "problem_id": "dcb_ext_p4_003",
+        "task_type": "safety",
+        "name": "DynaCertBench System 089 · DCB-EXT-P4-003 · Extend-\\texttt{S024}, \\cite{taheri2025barrierbench}",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -x1-0.4*x2+0.15*sin(x3)+u1, dx3/dt = x4+u2, dx4/dt = -0.6*x3-0.3*x4+u3",
+        "source": "paper System 89; canonical record DCB-EXT-P4-003",
+        "assumptions": [
+          "Deterministically normalized from canonical record DCB-EXT-P4-003.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "controller_parameters": "u0,u1,u2,u3",
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "0.5",
+              "0.8"
+            ],
+            [
+              "0.3",
+              "0.6"
+            ],
+            [
+              "0.5",
+              "0.8"
+            ],
+            [
+              "0.3",
+              "0.6"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "union",
+          "sets": [
+            {
+              "type": "box",
+              "bounds": [
+                [
+                  "2.5",
+                  "3.5"
+                ],
+                [
+                  "2",
+                  "3"
+                ],
+                [
+                  "2.5",
+                  "3.5"
+                ],
+                [
+                  "2",
+                  "3"
+                ]
+              ]
+            },
+            {
+              "type": "box",
+              "bounds": [
+                [
+                  "-3.5",
+                  "-2.5"
+                ],
+                [
+                  "-3",
+                  "-2"
+                ],
+                [
+                  "-3.5",
+                  "-2.5"
+                ],
+                [
+                  "-3",
+                  "-2"
+                ]
+              ]
+            }
+          ]
+        },
+        "analysis_bounds": [
+          [
+            "-1/2",
+            "9/5"
+          ],
+          [
+            "-7/10",
+            "8/5"
+          ],
+          [
+            "-1/2",
+            "9/5"
+          ],
+          [
+            "-7/10",
+            "8/5"
+          ]
+        ],
+        "formal_domain": "unbounded",
+        "control_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "candidate": null,
+      "paper_system_number": 89,
+      "paper_system_label": "System 89",
+      "local_name": "S089__DCB-EXT-P4-003"
+    },
+    {
+      "record_id": "DCB-EXT-P4-004",
+      "paper_system_number": 90,
+      "paper_system_label": "System 90",
+      "local_name": "S090__DCB-EXT-P4-004",
+      "problem": {
+        "problem_id": "dcb_ext_p4_004",
+        "task_type": "safety",
+        "name": "DynaCertBench System 090 · DCB-EXT-P4-004 · Extend--Hi-Ord8 with bounded sinusoidal disturbance, \\cite{abate2021fossil}",
+        "dynamics": "dx1/dt = x2, dx2/dt = x3, dx3/dt = x4, dx4/dt = x5, dx5/dt = x6, dx6/dt = x7, dx7/dt = x8, dx8/dt = -20*x8+170*x7+800*x6+2273*x5+3980*x4+4180*x3+2400*x2+576*x1+sin(omega*x1)",
+        "source": "paper System 90; canonical record DCB-EXT-P4-004",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 93.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "Safety is required for every fixed omega in [1/2,2].",
+          "The synthesized barrier is one common state-only function B(x), independent of omega.",
+          "PDF 4-20 removes d(t) and corrects the signs in the last flow component."
+        ],
+        "analysis_bounds": [
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ],
+          [
+            "-11/5",
+            "11/5"
+          ]
+        ],
+        "fixed_parameters": [
+          {
+            "name": "omega",
+            "bounds": [
+              "1/2",
+              2
+            ]
+          }
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ],
+            [
+              "9/10",
+              "11/10"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ],
+            [
+              "-11/5",
+              "-9/5"
+            ]
+          ]
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-EXT-P4-005",
+      "paper_system_number": 91,
+      "paper_system_label": "System 91",
+      "local_name": "S091__DCB-EXT-P4-005",
+      "problem": {
+        "problem_id": "dcb_ext_p4_005",
+        "task_type": "safety",
+        "name": "DynaCertBench System 091 · DCB-EXT-P4-005 · Safety extension of Example~5.4, \\cite{liu2024tool}",
+        "dynamics": "dx1/dt = -x1+1/2*x2-1/10*x9**2+sin(x2), dx2/dt = -1/2*x1-x2, dx3/dt = -x3+1/2*x4-1/10*x1**2+exp(-x3)-1, dx4/dt = -1/2*x3-x4, dx5/dt = -x5+1/2*x6+1/10*x7**2, dx6/dt = -1/2*x5-x6, dx7/dt = -x7+1/2*x8, dx8/dt = -1/2*x7-x8, dx9/dt = -x9+1/2*x10, dx10/dt = -1/2*x9-x10+1/10*x2**2",
+        "source": "paper System 91; canonical record DCB-EXT-P4-005",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 94.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "PDF 4-20 removes omega and d(t); both perturbations are deterministic state functions."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ],
+            [
+              "-7/20",
+              "7/20"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "9/20",
+              "4/5"
+            ],
+            [
+              "-1/5",
+              "1/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ],
+            [
+              "-2/5",
+              "2/5"
+            ]
+          ]
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P1-001",
+      "paper_system_number": 92,
+      "paper_system_label": "System 92",
+      "local_name": "S092__DCB-OURS-P1-001",
+      "problem": {
+        "problem_id": "dcb_ours_p1_001",
+        "task_type": "stability",
+        "name": "DynaCertBench System 092 · DCB-OURS-P1-001 · 8D Rational-Cosine Ring",
+        "dynamics": "dx1/dt = -3*x1+x2*cos(x1)/(1+x8**2), dx2/dt = -3*x2+x3*cos(x2)/(1+x1**2), dx3/dt = -3*x3+x4*cos(x3)/(1+x2**2), dx4/dt = -3*x4+x5*cos(x4)/(1+x3**2), dx5/dt = -3*x5+x6*cos(x1)/(1+x4**2), dx6/dt = -3*x6+x7*cos(x2)/(1+x5**2), dx7/dt = -3*x7+x8*cos(x3)/(1+x6**2), dx8/dt = -3*x8+x1*cos(x4)/(1+x7**2)",
+        "source": "paper System 92; canonical record DCB-OURS-P1-001",
+        "assumptions": [
+          "Transcribed from active LaTeX System 92.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "global_exponential",
+        "neighborhood": {
+          "type": "unbounded"
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P1-002",
+      "paper_system_number": 93,
+      "paper_system_label": "System 93",
+      "local_name": "S093__DCB-OURS-P1-002",
+      "problem": {
+        "problem_id": "dcb_ours_p1_002",
+        "task_type": "stability",
+        "name": "DynaCertBench System 093 · DCB-OURS-P1-002 · 7D Heterogeneous Trigonometric-Rational Network",
+        "dynamics": "dx1/dt = -5*x1+x2*cos(x1)/(1+x7**2), dx2/dt = -(9/2)*x2+(6/5)*x4*sin(2*x2)/(1+2*x1**2), dx3/dt = -6*x3+(4/5)*x6*cos(x3/2)/(1+(3/2)*x2**2), dx4/dt = -(11/2)*x4+(3/2)*x7*sin((3/2)*x4)/(1+3*x3**2), dx5/dt = -5*x5+(9/10)*x1*cos(2*x5)/(1+(4/3)*x4**2), dx6/dt = -(9/2)*x6+(7/5)*x5*sin(x6/3)/(1+(5/2)*x5**2), dx7/dt = -6*x7+(1/2)*x3*cos((5/2)*x7)/(1+(1/2)*x5**2)",
+        "source": "paper System 93; canonical record DCB-OURS-P1-002",
+        "assumptions": [
+          "Transcribed from active LaTeX System 93.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "global_exponential",
+        "neighborhood": {
+          "type": "unbounded"
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P2-001",
+      "paper_system_number": 94,
+      "paper_system_label": "System 94",
+      "local_name": "S094__DCB-OURS-P2-001",
+      "problem": {
+        "problem_id": "dcb_ours_p2_001",
+        "task_type": "roa",
+        "name": "DynaCertBench System 094 · DCB-OURS-P2-001 · Our cyclic ten-dimensional rational system",
+        "dynamics": "dx1/dt = -x1+1/4*x2+1/20*(x3/(1+x3**2)), dx2/dt = -x2+1/4*x3+1/20*(x4/(1+x4**2)), dx3/dt = -x3+1/4*x4+1/20*(x5/(1+x5**2)), dx4/dt = -x4+1/4*x5+1/20*(x6/(1+x6**2)), dx5/dt = -x5+1/4*x6+1/20*(x7/(1+x7**2)), dx6/dt = -x6+1/4*x7+1/20*(x8/(1+x8**2)), dx7/dt = -x7+1/4*x8+1/20*(x9/(1+x9**2)), dx8/dt = -x8+1/4*x9+1/20*(x10/(1+x10**2)), dx9/dt = -x9+1/4*x10+1/20*(x1/(1+x1**2)), dx10/dt = -x10+1/4*x1+1/20*(x2/(1+x2**2))",
+        "source": "paper System 94; canonical record DCB-OURS-P2-001",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 96.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The formal neighborhood is R^10; [-10,10]^10 is numerical screening only."
+        ],
+        "analysis_bounds": [
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ],
+          [
+            -10,
+            10
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stability_kind": "local_asymptotic",
+        "neighborhood": {
+          "type": "unbounded"
+        },
+        "formal_domain": "unbounded"
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P2-002",
+      "paper_system_number": 95,
+      "paper_system_label": "System 95",
+      "local_name": "S095__DCB-OURS-P2-002",
+      "problem": {
+        "problem_id": "dcb_ours_p2_002",
+        "task_type": "roa",
+        "name": "DynaCertBench System 095 · DCB-OURS-P2-002 · Seven-dimensional multi-machine swing system",
+        "dynamics": "dx1/dt = x2, dx2/dt = -(1/2)*x2-(3/2)*sin(x1)-sin(x1-x3)-(3/2)*sin(x1-x7), dx3/dt = x4, dx4/dt = -(1/2)*x4-(1/2)*sin(x3)-sin(x3-x1)-sin(x3-x5), dx5/dt = x6, dx6/dt = -(1/2)*x6-sin(x5)-sin(x5-x3)-(3/2)*sin(x5-x7), dx7/dt = -(1/5)*sin(x7)-(3/2)*sin(x7-x1)-(3/2)*sin(x7-x5)",
+        "source": "paper System 95; canonical record DCB-OURS-P2-002",
+        "assumptions": [
+          "Transcribed from active LaTeX System 95.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ],
+          [
+            -3,
+            3
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-pi",
+              "pi"
+            ],
+            [
+              "-pi",
+              "pi"
+            ],
+            [
+              "-pi",
+              "pi"
+            ],
+            [
+              "-pi",
+              "pi"
+            ],
+            [
+              "-pi",
+              "pi"
+            ],
+            [
+              "-pi",
+              "pi"
+            ],
+            [
+              "-pi",
+              "pi"
+            ]
+          ]
+        },
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ]
+          ]
+        },
+        "stability_kind": "local_asymptotic"
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P2-003",
+      "paper_system_number": 96,
+      "paper_system_label": "System 96",
+      "local_name": "S096__DCB-OURS-P2-003",
+      "problem": {
+        "problem_id": "dcb_ours_p2_003",
+        "task_type": "roa",
+        "name": "DynaCertBench System 096 · DCB-OURS-P2-003 · Seven-dimensional coupled saturating oscillator",
+        "dynamics": "dx1/dt = x2, dx2/dt = -2*x1/(1+x1**2)+(1/2)*x3-(3/10)*x2+(1/5)*x5, dx3/dt = x4, dx4/dt = (1/2)*x1-(3/2)*x3-sin(x3)-(1/5)*x4+(1/10)*x6, dx5/dt = -(1/2)*x5-(1/5)*x2+(1/10)*x6, dx6/dt = -(2/5)*x6-(1/10)*x5-(1/10)*x4+(1/10)*x7, dx7/dt = -(3/10)*x7-(1/10)*x6",
+        "source": "paper System 96; canonical record DCB-OURS-P2-003",
+        "assumptions": [
+          "Transcribed from active LaTeX System 96.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ],
+          [
+            -5,
+            5
+          ]
+        ],
+        "equilibrium": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "neighborhood": {
+          "type": "box",
+          "bounds": [
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ],
+            [
+              "-5",
+              "5"
+            ]
+          ]
+        },
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ],
+            [
+              "-3/5",
+              "3/5"
+            ]
+          ]
+        },
+        "stability_kind": "local_asymptotic"
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P3-001",
+      "paper_system_number": 97,
+      "paper_system_label": "System 97",
+      "local_name": "S097__DCB-OURS-P3-001",
+      "problem": {
+        "problem_id": "dcb_ours_p3_001",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 097 · DCB-OURS-P3-001 · New-6D Cosine Cascade Invariance",
+        "dynamics": "dx1/dt = x2+u0, dx2/dt = -x1-1/10*sin(x1)-x2+x3, dx3/dt = -2*x3+x4, dx4/dt = -3/2*x4+x5, dx5/dt = -2*x5+x6, dx6/dt = -3/2*x6+u1",
+        "source": "paper System 97; canonical record DCB-OURS-P3-001",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 97.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "X_seed is the paper's required nontrivial seed set."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "controller_parameters": "u0,u1",
+        "control_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            0,
+            "4/5",
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/10"
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P3-002",
+      "paper_system_number": 98,
+      "paper_system_label": "System 98",
+      "local_name": "S098__DCB-OURS-P3-002",
+      "problem": {
+        "problem_id": "dcb_ours_p3_002",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 098 · DCB-OURS-P3-002 · New-6D Exponential Cascade Invariance",
+        "dynamics": "dx1/dt = x2+u, dx2/dt = -x1-1/20*(exp(x1)-exp(-x1))-x2+x3, dx3/dt = -2*x3+x4, dx4/dt = -3/2*x4+x5, dx5/dt = -2*x5+x6, dx6/dt = -3/2*x6",
+        "source": "paper System 98; canonical record DCB-OURS-P3-002",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 98.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The source X_I ball has radius 1/8."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "controller_parameters": "u",
+        "control_bounds": [
+          [
+            -1,
+            1
+          ]
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            "-1/4",
+            "1/4",
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/8"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "7/10",
+            "-7/10",
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/10"
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P3-003",
+      "paper_system_number": 99,
+      "paper_system_label": "System 99",
+      "local_name": "S099__DCB-OURS-P3-003",
+      "problem": {
+        "problem_id": "dcb_ours_p3_003",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 099 · DCB-OURS-P3-003 · New-5D Mixed Nonlinear Cascade Invariance",
+        "dynamics": "dx1/dt = x2-1/2*x1, dx2/dt = -x1-x1/(5*(1+x1**2))-2*x2+x3/(10*(1+x3**2)), dx3/dt = x4-1/2*x3, dx4/dt = -x3-1/40*(exp(x3)-exp(-x3))-2*x4+1/5*x5, dx5/dt = -3/2*x5-1/10*x5**3+u",
+        "source": "paper System 99; canonical record DCB-OURS-P3-003",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 99.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "The paper supplies no X_I/X_seed; no seed set is invented locally."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "controller_parameters": "u",
+        "control_bounds": [
+          [
+            -1,
+            1
+          ]
+        ],
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            "7/10",
+            "-7/10",
+            0,
+            0,
+            0
+          ],
+          "radius": "1/10"
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P3-004",
+      "paper_system_number": 100,
+      "paper_system_label": "System 100",
+      "local_name": "S100__DCB-OURS-P3-004",
+      "problem": {
+        "problem_id": "dcb_ours_p3_004",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 100 · DCB-OURS-P3-004 · New-6D Opinion Dynamics",
+        "dynamics": "x1[k+1] = x1+1/4*(tanh(x2-x1) + tanh(x3-x1)), x2[k+1] = x2+1/4*(tanh(x1-x2) + tanh(x3-x2) + tanh(x4-x2)), x3[k+1] = x3+1/4*(tanh(x1-x3) + tanh(x2-x3) + tanh(x5-x3)), x4[k+1] = x4+1/4*(tanh(x2-x4) + tanh(x5-x4)), x5[k+1] = x5+1/4*(tanh(x3-x5) + tanh(x4-x5) + tanh(x6-x5)), x6[k+1] = x6+1/4*(tanh(x5-x6))",
+        "source": "paper System 100; canonical record DCB-OURS-P3-004",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 100.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "PDF 4-20 fixes N=6, alpha=1/4, and the displayed adjacency matrix.",
+          "The paper supplies no X_I/X_seed; no seed set is invented locally."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "unsafe_set": {
+          "type": "union",
+          "sets": [
+            {
+              "type": "constraint",
+              "lhs": "x1",
+              "relation": "ge",
+              "rhs": "4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x1",
+              "relation": "le",
+              "rhs": "-4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x2",
+              "relation": "ge",
+              "rhs": "4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x2",
+              "relation": "le",
+              "rhs": "-4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x3",
+              "relation": "ge",
+              "rhs": "4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x3",
+              "relation": "le",
+              "rhs": "-4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x4",
+              "relation": "ge",
+              "rhs": "4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x4",
+              "relation": "le",
+              "rhs": "-4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x5",
+              "relation": "ge",
+              "rhs": "4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x5",
+              "relation": "le",
+              "rhs": "-4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x6",
+              "relation": "ge",
+              "rhs": "4/5"
+            },
+            {
+              "type": "constraint",
+              "lhs": "x6",
+              "relation": "le",
+              "rhs": "-4/5"
+            }
+          ]
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P3-005",
+      "paper_system_number": 101,
+      "paper_system_label": "System 101",
+      "local_name": "S101__DCB-OURS-P3-005",
+      "problem": {
+        "problem_id": "dcb_ours_p3_005",
+        "task_type": "invariant",
+        "name": "DynaCertBench System 101 · DCB-OURS-P3-005 · Invariance Verification of a Discrete-Time Controlled Hopfield Network",
+        "dynamics": "x1[k+1] = x1+1/20*(1-x1**2)*(-1/2*log(1+x1)+1/2*log(1-x1)+-3/2*x1 + 1/4*x2+u1), x2[k+1] = x2+1/20*(1-x2**2)*(-1/2*log(1+x2)+1/2*log(1-x2)+-3/2*x2 + 1/4*x1 + 1/4*x3+u2), x3[k+1] = x3+1/20*(1-x3**2)*(-1/2*log(1+x3)+1/2*log(1-x3)+-3/2*x3 + 1/4*x2 + 1/4*x4+u3), x4[k+1] = x4+1/20*(1-x4**2)*(-1/2*log(1+x4)+1/2*log(1-x4)+-3/2*x4 + 1/4*x3 + 1/4*x5+u4), x5[k+1] = x5+1/20*(1-x5**2)*(-1/2*log(1+x5)+1/2*log(1-x5)+-3/2*x5 + 1/4*x4 + 1/4*x6+u5), x6[k+1] = x6+1/20*(1-x6**2)*(-1/2*log(1+x6)+1/2*log(1-x6)+-3/2*x6 + 1/4*x5 + 1/4*x7+u6), x7[k+1] = x7+1/20*(1-x7**2)*(-1/2*log(1+x7)+1/2*log(1-x7)+-3/2*x7 + 1/4*x6 + 1/4*x8+u7), x8[k+1] = x8+1/20*(1-x8**2)*(-1/2*log(1+x8)+1/2*log(1-x8)+-3/2*x8 + 1/4*x7 + 1/4*x9+u8), x9[k+1] = x9+1/20*(1-x9**2)*(-1/2*log(1+x9)+1/2*log(1-x9)+-3/2*x9 + 1/4*x8 + 1/4*x10+u9), x10[k+1] = x10+1/20*(1-x10**2)*(-1/2*log(1+x10)+1/2*log(1-x10)+-3/2*x10 + 1/4*x9+u10)",
+        "source": "paper System 101; canonical record DCB-OURS-P3-005",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 101.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean.",
+          "atanh(x) is represented exactly by (log(1+x)-log(1-x))/2 on X.",
+          "W is the tridiagonal matrix displayed in PDF 4-20: diagonal -3/2 and adjacent entries 1/4.",
+          "The paper supplies no X_I/X_seed; no seed set is invented locally."
+        ],
+        "analysis_bounds": [
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ],
+          [
+            "-9/10",
+            "9/10"
+          ]
+        ],
+        "controller_parameters": "u1,u2,u3,u4,u5,u6,u7,u8,u9,u10",
+        "control_bounds": [
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ],
+          [
+            -2,
+            2
+          ]
+        ],
+        "safety_interpretation": "outside_X_is_unsafe"
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P4-001",
+      "paper_system_number": 102,
+      "paper_system_label": "System 102",
+      "local_name": "S102__DCB-OURS-P4-001",
+      "problem": {
+        "problem_id": "dcb_ours_p4_001",
+        "task_type": "safety",
+        "name": "DynaCertBench System 102 · DCB-OURS-P4-001 · New-8D Chain Safety",
+        "dynamics": "x1[k+1] = x1+1/200*(-x1/(1+x1**2)-4*x2), x2[k+1] = x2+1/200*(4*x1/(1+x1**2)-x2-3*x3/(1+x3**2)), x3[k+1] = x3+1/200*(3*x2-x3/(1+x3**2)-5*x4), x4[k+1] = x4+1/200*(5*x3/(1+x3**2)-x4-2*x5/(1+x5**2)), x5[k+1] = x5+1/200*(2*x4-x5/(1+x5**2)-4*x6), x6[k+1] = x6+1/200*(4*x5/(1+x5**2)-x6-3*x7/(1+x7**2)), x7[k+1] = x7+1/200*(3*x6-x7/(1+x7**2)-6*x8), x8[k+1] = x8+1/200*(6*x7/(1+x7**2)-x8)",
+        "source": "paper System 102; canonical record DCB-OURS-P4-001",
+        "assumptions": [
+          "Transcribed from active LaTeX System 102.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "3/4",
+              "9/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ]
+          ]
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P4-002",
+      "paper_system_number": 103,
+      "paper_system_label": "System 103",
+      "local_name": "S103__DCB-OURS-P4-002",
+      "problem": {
+        "problem_id": "dcb_ours_p4_002",
+        "task_type": "safety",
+        "name": "DynaCertBench System 103 · DCB-OURS-P4-002 · New-6D Arctan Chain Safety",
+        "dynamics": "x1[k+1] = x1+1/200*(-atan(x1)-8*x2), x2[k+1] = x2+1/200*(8*atan(x1)-x2-6*atan(x3)), x3[k+1] = x3+1/200*(6*x2-atan(x3)-10*x4), x4[k+1] = x4+1/200*(10*atan(x3)-x4-4*atan(x5)), x5[k+1] = x5+1/200*(4*x4-atan(x5)-8*x6), x6[k+1] = x6+1/200*(8*atan(x5)-x6)",
+        "source": "paper System 103; canonical record DCB-OURS-P4-002",
+        "assumptions": [
+          "Transcribed from paper-4-20-20260904 System 103.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "initial_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ],
+            [
+              "-3/20",
+              "3/20"
+            ]
+          ]
+        },
+        "unsafe_set": {
+          "type": "box",
+          "bounds": [
+            [
+              "3/4",
+              "9/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ],
+            [
+              "-1/10",
+              "1/10"
+            ]
+          ]
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P4-003",
+      "paper_system_number": 104,
+      "paper_system_label": "System 104",
+      "local_name": "S104__DCB-OURS-P4-003",
+      "problem": {
+        "problem_id": "dcb_ours_p4_003",
+        "task_type": "safety",
+        "name": "DynaCertBench System 104 · DCB-OURS-P4-003 · New-8D Parametric Nonlinear Safety",
+        "dynamics": "dx1/dt = x2, dx2/dt = -x1-(1/10)*sin(omega*x1)-x2+x3, dx3/dt = -2*x3+x4, dx4/dt = -(3/2)*x4+x5, dx5/dt = -2*x5+x6, dx6/dt = -(3/2)*x6+(1/5)*x7, dx7/dt = -2*x7+(1/5)*x6+(1/5)*x8-(1/10)*x7*sin(x8), dx8/dt = -(3/2)*x8+(1/5)*x7-(1/10)*x8*cos(x7)",
+        "source": "paper System 104; canonical record DCB-OURS-P4-003",
+        "assumptions": [
+          "Transcribed from active LaTeX System 104.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "fixed_parameters": [
+          {
+            "name": "omega",
+            "bounds": [
+              "1/2",
+              2
+            ]
+          }
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            0,
+            "4/5",
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/10"
+        }
+      },
+      "candidate": null
+    },
+    {
+      "record_id": "DCB-OURS-P4-004",
+      "paper_system_number": 105,
+      "paper_system_label": "System 105",
+      "local_name": "S105__DCB-OURS-P4-004",
+      "problem": {
+        "problem_id": "dcb_ours_p4_004",
+        "task_type": "safety",
+        "name": "DynaCertBench System 105 · DCB-OURS-P4-004 · New-5D Arctangent Perturbation Safety",
+        "dynamics": "dx1/dt = x2+(1/2)*x5, dx2/dt = -x1-omega*x2+2*x4, dx3/dt = x4, dx4/dt = -2*x3-(1/8)*atan(x3)-(3/2)*x4-2*x2+x5, dx5/dt = -(1/2)*x1-x4-x5-(1/8)*atan(x5)",
+        "source": "paper System 105; canonical record DCB-OURS-P4-004",
+        "assumptions": [
+          "Transcribed from active LaTeX System 105.",
+          "Decimal source constants are interpreted as exact rationals; no floating approximation enters Lean."
+        ],
+        "analysis_bounds": [
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "fixed_parameters": [
+          {
+            "name": "omega",
+            "bounds": [
+              1,
+              2
+            ]
+          }
+        ],
+        "initial_set": {
+          "type": "ball",
+          "center": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "radius": "1/2"
+        },
+        "unsafe_set": {
+          "type": "ball",
+          "center": [
+            0,
+            0,
+            "4/5",
+            0,
+            0
+          ],
+          "radius": "1/10"
+        }
+      },
+      "candidate": null
+    }
+  ],
+  "revision_notes": [
+    "Generated from active LaTeX systeminstance order.",
+    "All candidates are null; proof answers are not part of the dataset."
+  ]
+}

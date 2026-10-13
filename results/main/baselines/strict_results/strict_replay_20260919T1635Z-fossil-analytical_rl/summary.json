@@ -1,0 +1,64 @@
+{
+  "env": {
+    "ibex_lib": "<BASELINE_STAGE_ROOT>/envs/fossil-libs",
+    "mosek_license": "<BASELINE_STAGE_ROOT>/envs/mosek.lic",
+    "stage_root": "<BASELINE_STAGE_ROOT>"
+  },
+  "methods": {
+    "fossil": {
+      "cases": [
+        {
+          "case_id": "DCB-LIT-P4-003",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-008",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-026",
+          "failure_reason": "delta-sat",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P4-037",
+          "failure_reason": "delta-sat",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P4-038",
+          "failure_reason": "delta-sat",
+          "passed": false
+        },
+        {
+          "case_id": "DCB-LIT-P4-040",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-041",
+          "failure_reason": null,
+          "passed": true
+        },
+        {
+          "case_id": "DCB-LIT-P4-045",
+          "failure_reason": null,
+          "passed": true
+        }
+      ],
+      "failure_reasons": {
+        "delta-sat": 3
+      },
+      "method": "fossil",
+      "native_accepted_denominator": 8,
+      "strict": "5/8",
+      "strict_passed": 5
+    }
+  },
+  "mode": "strict",
+  "schema_version": "baseline-native-strict.v1",
+  "stage_root": "<BASELINE_STAGE_ROOT>",
+  "stamp": "20260919T1635Z-fossil-analytical_rl"
+}

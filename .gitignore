@@ -1,0 +1,22 @@
+.env
+.env.local
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.olean
+*.ilean
+llm2cert/formalization/lean/.lake/
+.venv/
+.DS_Store
+/runs/
+benchmark/analysis/figures/
+/benchmark/experiments/
+llm2cert/formalization/work/
+
+# Extracted records and regenerated table calculations
+/results/*/records/
+/results/*/data/
+/results/rq3/inputs/
+/results/paper_tables.json
+/results/recomputed_statistics.json

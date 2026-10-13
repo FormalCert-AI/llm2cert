@@ -1,0 +1,88 @@
+{
+  "schema_version": "dynacertbench.curation-ledger.v1",
+  "source": {
+    "location": "Final paper Table 15",
+    "type": "reported grouped counts",
+    "note": "Grouped curation counts by source category and primary curation rule."
+  },
+  "unit": "candidate systems",
+  "source_columns": [
+    "Source papers",
+    "BarrierBench"
+  ],
+  "source_totals": {
+    "Source papers": 133,
+    "BarrierBench": 100
+  },
+  "candidate_pool_total": 233,
+  "retained_total": 80,
+  "excluded_total": 153,
+  "rows": [
+    {
+      "order": 0,
+      "outcome_id": "retained",
+      "display_label": "Retained",
+      "description": "Retained in the Literature-derived tier",
+      "counts": {
+        "Source papers": 48,
+        "BarrierBench": 32
+      },
+      "total": 80
+    },
+    {
+      "order": 1,
+      "outcome_id": "R1",
+      "display_label": "R1 Exact duplicate",
+      "description": "Exact duplicate",
+      "counts": {
+        "Source papers": 24,
+        "BarrierBench": 0
+      },
+      "total": 24
+    },
+    {
+      "order": 2,
+      "outcome_id": "R2",
+      "display_label": "R2 Multiple configurations",
+      "description": "Multiple configurations of the same system",
+      "counts": {
+        "Source papers": 22,
+        "BarrierBench": 1
+      },
+      "total": 23
+    },
+    {
+      "order": 3,
+      "outcome_id": "R3",
+      "display_label": "R3 Related family variants",
+      "description": "Related variants from one system family",
+      "counts": {
+        "Source papers": 31,
+        "BarrierBench": 13
+      },
+      "total": 44
+    },
+    {
+      "order": 4,
+      "outcome_id": "R4",
+      "display_label": "R4 Simplified/redundant",
+      "description": "Simplified or redundant benchmark construction",
+      "counts": {
+        "Source papers": 0,
+        "BarrierBench": 54
+      },
+      "total": 54
+    },
+    {
+      "order": 5,
+      "outcome_id": "R5",
+      "display_label": "R5 Outside scope",
+      "description": "Outside the benchmark scope",
+      "counts": {
+        "Source papers": 8,
+        "BarrierBench": 0
+      },
+      "total": 8
+    }
+  ]
+}

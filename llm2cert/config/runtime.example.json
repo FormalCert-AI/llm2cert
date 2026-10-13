@@ -1,0 +1,43 @@
+{
+  "schema_version": "lean-barrier.local-runtime.v1",
+  "profile_name": "anonymous-local",
+  "runtimes": {
+    "z3": {
+      "name": "Z3",
+      "expected_version": "4.15.4",
+      "transport": "host",
+      "version_command": ["/usr/bin/z3", "--version"],
+      "query_command": ["/usr/bin/z3", "-in", "-smt2"]
+    },
+    "cvc5": {
+      "name": "cvc5",
+      "expected_version": "1.3.3",
+      "transport": "host",
+      "version_command": ["/usr/bin/cvc5", "--version"],
+      "query_command": ["/usr/bin/cvc5", "--lang=smt2", "--produce-models"]
+    },
+    "yices": {
+      "name": "Yices",
+      "expected_version": "2.7.0",
+      "transport": "host",
+      "version_command": ["/usr/bin/yices-smt2", "--version"],
+      "query_command": ["/usr/bin/yices-smt2", "--mcsat"]
+    },
+    "dreal": {
+      "name": "dReal",
+      "expected_version": "4.21.06.1",
+      "transport": "docker",
+      "image": "dreal/dreal4@sha256:6ec1d55b0eb5262dc9efb9f20e910ef997cee308ecad9d32a9a98ee0098b57d4",
+      "platform": "linux/amd64",
+      "version_command": ["dreal", "--version"],
+      "query_command": ["dreal", "--in", "--precision", "0.001", "--random-seed", "0", "--model"]
+    },
+    "lean": {
+      "name": "Lean",
+      "expected_version": "4.32.2",
+      "transport": "host",
+      "version_command": ["/usr/bin/lean", "--version"],
+      "query_command": []
+    }
+  }
+}
