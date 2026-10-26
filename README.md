@@ -1,6 +1,6 @@
 # LLM2Cert
 
-Code and data for **LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification**.
+This repository holds code and data for **LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification**.
 
 Zhipeng Cao*, Peiyang Song*, Nikolaus Vertovec, Weiru Cui, Zhihao Yang, Mingkang Liu, Luxia Lin, Bai Xue†, Alessandro Abate†  
 
