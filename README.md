@@ -6,7 +6,7 @@ Zhipeng Cao*, Peiyang Song*, Nikolaus Vertovec, Weiru Cui, Zhihao Yang, Mingkang
 
 *Equal contribution. †Equal advising.
 
-[Project website](https://formalcert-ai.github.io/llm2cert/) · [Paper](paper/LLM2Cert.pdf) · [Running the experiments](docs/RUNNING.md) · [Recorded results](results/README.md)
+[Project website](https://formalcert-ai.github.io/llm2cert/) · [Paper](https://arxiv.org/abs/2610.30524) · [Running the experiments](docs/RUNNING.md) · [Recorded results](results/README.md)
 
 LLM2Cert synthesizes Lyapunov functions, barrier certificates, and feedback policies, then verifies their obligations with SMT solvers and Lean. The repository includes DynaCertBench, with 105 stability, region-of-attraction, forward-invariance, and safety problems.
 
@@ -74,13 +74,13 @@ The [running guide](docs/RUNNING.md) also covers backend ablations, frozen-certi
 
 ```bibtex
 @misc{cao2026llm2cert,
-  title  = {LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification},
-  author = {Cao, Zhipeng and Song, Peiyang and Vertovec, Nikolaus and
-            Cui, Weiru and Yang, Zhihao and Liu, Mingkang and Lin, Luxia and
-            Xue, Bai and Abate, Alessandro},
-  year   = {2026},
-  note   = {Preprint},
-  url    = {https://github.com/FormalCert-AI/llm2cert}
+      title={LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification}, 
+      author={Zhipeng Cao and Peiyang Song and Nikolaus Vertovec and Weiru Cui and Zhihao Yang and Mingkang Liu and Luxia Lin and Bai Xue and Alessandro Abate},
+      year={2026},
+      eprint={2610.30524},
+      archivePrefix={arXiv},
+      primaryClass={eess.SY},
+      url={https://arxiv.org/abs/2610.30524}, 
 }
 ```
 
